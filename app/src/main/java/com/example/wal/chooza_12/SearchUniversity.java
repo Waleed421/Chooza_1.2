@@ -1,7 +1,9 @@
 package com.example.wal.chooza_12;
 
+import android.content.Context;
 import android.content.res.Resources;
 import android.graphics.Rect;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.CollapsingToolbarLayout;
@@ -13,22 +15,63 @@ import android.support.v7.widget.Toolbar;
 import android.util.TypedValue;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.ListView;
+import android.app.ListActivity;
+import android.app.ProgressDialog;
+import android.os.AsyncTask;
+import android.os.Bundle;
+import android.util.Log;
+import android.widget.ListView;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStreamWriter;
+import java.util.ArrayList;
+import java.util.HashMap;
 
 import com.bumptech.glide.Glide;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.jar.Attributes;
 
 public class SearchUniversity extends AppCompatActivity {
 
     private RecyclerView recyclerView;
     private AlbumsAdapter adapter;
     private List<Album> albumList;
-
+    private List<University> universityList;
+    //url
+    //private String url = "http://project-demos.com/video/api/web/v1/products?lang=2&expand=cookbyweight,cookbythickness,productnames,cuts,cutnames,productlanguages";
+    private String url="http://192.168.0.137/chooza/api/UniversityValues/GetAllUniversities";
+    // JSON Node names
+    private  static final String TAG_STUDENT= "Student";
+    private  static final String TAG_TEST= "Test";
+    private  static final String TAG_OPTION= "Option";
+    private  static final String TAG_QUESTION= "Question";
+    private  static final String TAG_RESULT= "Result";
+    private  static final String TAG_RECOMMENDATION= "Recommendation";
+    private static final String TAG_UNIVERSITY = "University";
+    private static final String TAG_PROGRAM = "Program";
+    private static final String TAG_PROGRAM_UNIVERSITY = "Program_University";
+    private static final String TAG_FEESTRUCTURE = "Fee_Structure";
+    private static final String TAG_ASPNET_ROLES = "aspnet_Roles";
+    private static final String TAG_ASPNET_USERS = "aspnet_Users";
+    private static final String TAG_ASPNET_USERSINROLES = "aspnet_UsersInRoles";
+    private MyDBHandler databaseHandler;
+    // Hashmap for ListView
+    ArrayList<HashMap<String, String>> universities;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.university_search);
+        databaseHandler = new MyDBHandler(SearchUniversity.this);
+        universities = new ArrayList<HashMap<String, String>>();
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -38,6 +81,7 @@ public class SearchUniversity extends AppCompatActivity {
 
         albumList = new ArrayList<>();
         adapter = new AlbumsAdapter(this, albumList);
+        new GetRecords().execute();
 
         RecyclerView.LayoutManager mLayoutManager = new GridLayoutManager(this, 2);
         recyclerView.setLayoutManager(mLayoutManager);
@@ -84,6 +128,65 @@ public class SearchUniversity extends AppCompatActivity {
                 }
             }
         });
+    }
+
+    private class GetRecords extends AsyncTask<Void, Void, Void> {
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+        }
+        @Override
+        protected Void doInBackground(Void... voids) {
+            // Creating service handler class instance
+            ServiceHandler sh = new ServiceHandler();
+            // Making a request to url and getting response
+            String jsonStr = sh.makeServiceCall(url, ServiceHandler.GET);
+            //writeToFile(jsonStr, SearchUniversity.this);
+            /*byte[] array = jsonStr.getBytes();
+            Log.d("Response: ", "> " + jsonStr);
+            if (jsonStr != null) {
+                try {
+
+                    JSONArray jr = new JSONArray(jsonStr);
+                    for (int i = 0; i < jr.length(); i++) {
+                        JSONObject jsonobject = jr.getJSONObject(i);
+                        String name = jsonobject.getString("Name");
+                        System.out.println(name);
+                    }
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+            } else {
+                Log.e("ServiceHandler", "Couldn't get any data from the url");
+            }*/
+            try {
+            JSONArray jr = new JSONArray(readFromFile(SearchUniversity.this , "Json.txt"));
+            for (int i = 0; i<jr.length(); i++)
+            {
+                JSONObject jsonobject= (JSONObject) jr.get(i);
+                System.out.println(jsonobject.optString("Id"));
+                System.out.println(jsonobject.optString("Name"));
+            }
+            //JSONObject jj = new JSONObject();
+            //jj = (JSONObject) jj.get("Name");
+            //System.out.println(jj.toString());
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
+            return null;
+        }
+
+        protected void onPostExecute(Void result) {
+            super.onPostExecute(result);
+            // CustomJSONadapter adapter1 = new CustomJSONadapter(getApplicationContext(),animals) ;
+           /* ListAdapter adapter = new SimpleAdapter(
+                    MainActivity.this, product,
+                    R.layout.list_item, new String[] { TAG_ID, TAG_PRODUCTS_ID, TAG_CUT_NAME}, new int[] { R.id.name,
+                    R.id.id, R.id.productname});
+            setListAdapter(adapter);*/
+        }
+
     }
 
     /**
@@ -180,5 +283,28 @@ public class SearchUniversity extends AppCompatActivity {
     private int dpToPx(int dp) {
         Resources r = getResources();
         return Math.round(TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, dp, r.getDisplayMetrics()));
+    }
+    public static String readFromFile(Context context, String file) {
+        try {
+            InputStream is = context.getAssets().open(file);
+            int size = is.available();
+            byte buffer[] = new byte[size];
+            is.read(buffer);
+            is.close();
+            return new String(buffer);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return "" ;
+        }
+    }
+    private void writeToFile(String data,Context context) {
+        try {
+            OutputStreamWriter outputStreamWriter = new OutputStreamWriter(context.openFileOutput("/assets/config.txt", Context.MODE_PRIVATE));
+            outputStreamWriter.write(data);
+            outputStreamWriter.close();
+        }
+        catch (IOException e) {
+            Log.e("Exception", "File write failed: " + e.toString());
+        }
     }
 }

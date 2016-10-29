@@ -3,35 +3,41 @@
     abi="armeabi-v7a,armeabi"
     api-level="22"
     density="xhdpi"
-    format="7"
-    timestamp="260204660634680"
-    token="-9044095170810506456" >
+    format="8"
+    plugin-version="2.2.2"
+    timestamp="117567586221885"
+    token="2807759074756553779"
+    verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="1160" />
+        duration="425" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="41" />
+        duration="46" />
     <task
         name="verifier"
-        duration="8" />
+        duration="24" />
 
     <artifact
-        location="C:\Users\wal\Documents\Android Studio\Chooza_1.2\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_5\classes.dex"
+        location="C:\Users\Waleed-PC\Documents\ChoozaApp-20161016T182023Z\ChoozaApp\Chooza_1.2\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_5\classes.dex"
         type="DEX" />
 
-    <build timestamp="259291834944264" >
+    <build
+        timestamp="117186686743802"
+        verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="C:\Users\wal\Documents\Android Studio\Chooza_1.2\app\build\outputs\apk\app-debug.apk"
+            location="C:\Users\Waleed-PC\Documents\ChoozaApp-20161016T182023Z\ChoozaApp\Chooza_1.2\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
     </build>
-    <build timestamp="260204660634680" >
+    <build
+        timestamp="117567586221885"
+        verifier="COLD_SWAP_REQUESTED" >
         <artifact
-            location="C:\Users\wal\Documents\Android Studio\Chooza_1.2\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_5\classes.dex"
+            location="C:\Users\Waleed-PC\Documents\ChoozaApp-20161016T182023Z\ChoozaApp\Chooza_1.2\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_5\classes.dex"
             type="DEX" />
     </build>
 

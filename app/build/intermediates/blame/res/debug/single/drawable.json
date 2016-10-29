@@ -1,254 +1,254 @@
 [
     {
-        "merged": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_switch_thumb_material.xml",
-        "source": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_switch_thumb_material.xml"
+        "merged": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
+        "source": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_spinner_textfield_background_material.xml"
     },
     {
-        "merged": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_clear_material.xml",
-        "source": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_ic_clear_material.xml"
+        "merged": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\settings.png",
+        "source": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\src\\main\\res\\drawable\\settings.png"
     },
     {
-        "merged": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_snackbar_background.xml",
-        "source": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.1.1\\res\\drawable\\design_snackbar_background.xml"
+        "merged": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_dots.png",
+        "source": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\src\\main\\res\\drawable\\ic_dots.png"
     },
     {
-        "merged": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\album7.png",
-        "source": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\src\\main\\res\\drawable\\album7.png"
+        "merged": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_search_api_material.xml",
+        "source": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_ic_search_api_material.xml"
     },
     {
-        "merged": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\giki.jpg",
-        "source": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\src\\main\\res\\drawable\\giki.jpg"
+        "merged": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ist.jpg",
+        "source": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\src\\main\\res\\drawable\\ist.jpg"
     },
     {
-        "merged": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\album1.png",
-        "source": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\src\\main\\res\\drawable\\album1.png"
+        "merged": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_small_material.xml",
+        "source": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_ratingbar_small_material.xml"
     },
     {
-        "merged": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\banner.jpg",
-        "source": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\src\\main\\res\\drawable\\banner.jpg"
+        "merged": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\lahore.jpg",
+        "source": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\src\\main\\res\\drawable\\lahore.jpg"
     },
     {
-        "merged": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bahria.jpg",
-        "source": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\src\\main\\res\\drawable\\bahria.jpg"
+        "merged": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\album2.png",
+        "source": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\src\\main\\res\\drawable\\album2.png"
     },
     {
-        "merged": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_search_api_material.xml",
-        "source": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_ic_search_api_material.xml"
+        "merged": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_menu_overflow_material.xml",
+        "source": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_ic_menu_overflow_material.xml"
     },
     {
-        "merged": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\pieas.jpg",
-        "source": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\src\\main\\res\\drawable\\pieas.jpg"
+        "merged": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\album3.png",
+        "source": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\src\\main\\res\\drawable\\album3.png"
     },
     {
-        "merged": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
-        "source": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_list_selector_holo_light.xml"
+        "merged": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_tab_indicator_material.xml",
+        "source": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_tab_indicator_material.xml"
     },
     {
-        "merged": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
-        "source": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_list_selector_holo_dark.xml"
+        "merged": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_tick_mark_material.xml",
+        "source": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_seekbar_tick_mark_material.xml"
     },
     {
-        "merged": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ist.jpg",
-        "source": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\src\\main\\res\\drawable\\ist.jpg"
+        "merged": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\help.png",
+        "source": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\src\\main\\res\\drawable\\help.png"
     },
     {
-        "merged": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml",
-        "source": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml"
+        "merged": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_internal_bg.xml",
+        "source": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_cab_background_internal_bg.xml"
     },
     {
-        "merged": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\splash_background.jpg",
-        "source": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\src\\main\\res\\drawable\\splash_background.jpg"
+        "merged": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_switch_thumb_material.xml",
+        "source": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_switch_thumb_material.xml"
     },
     {
-        "merged": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_ab_back_material.xml",
-        "source": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_ic_ab_back_material.xml"
+        "merged": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\logo.png",
+        "source": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\src\\main\\res\\drawable\\logo.png"
     },
     {
-        "merged": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_small_material.xml",
-        "source": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_ratingbar_small_material.xml"
+        "merged": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bahria.jpg",
+        "source": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\src\\main\\res\\drawable\\bahria.jpg"
     },
     {
-        "merged": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\logo.png",
-        "source": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\src\\main\\res\\drawable\\logo.png"
+        "merged": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_clear_material.xml",
+        "source": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_ic_clear_material.xml"
     },
     {
-        "merged": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\album11.png",
-        "source": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\src\\main\\res\\drawable\\album11.png"
+        "merged": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
+        "source": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_textfield_search_material.xml"
     },
     {
-        "merged": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
-        "source": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_btn_borderless_material.xml"
+        "merged": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_material.xml",
+        "source": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_ratingbar_material.xml"
     },
     {
-        "merged": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\air.jpg",
-        "source": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\src\\main\\res\\drawable\\air.jpg"
+        "merged": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
+        "source": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_btn_check_material.xml"
     },
     {
-        "merged": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",
-        "source": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_text_cursor_material.xml"
+        "merged": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml",
+        "source": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml"
     },
     {
-        "merged": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\album2.png",
-        "source": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\src\\main\\res\\drawable\\album2.png"
+        "merged": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_track_material.xml",
+        "source": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_seekbar_track_material.xml"
     },
     {
-        "merged": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\album5.png",
-        "source": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\src\\main\\res\\drawable\\album5.png"
+        "merged": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_indicator_material.xml",
+        "source": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_ratingbar_indicator_material.xml"
     },
     {
-        "merged": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cover.jpg",
-        "source": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\src\\main\\res\\drawable\\cover.jpg"
+        "merged": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",
+        "source": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_text_cursor_material.xml"
     },
     {
-        "merged": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_tab_indicator_material.xml",
-        "source": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_tab_indicator_material.xml"
+        "merged": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_thumb_material.xml",
+        "source": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_seekbar_thumb_material.xml"
     },
     {
-        "merged": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\lahore.jpg",
-        "source": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\src\\main\\res\\drawable\\lahore.jpg"
+        "merged": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_radio_material.xml",
+        "source": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_btn_radio_material.xml"
     },
     {
-        "merged": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\help.png",
-        "source": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\src\\main\\res\\drawable\\help.png"
+        "merged": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\pieas.jpg",
+        "source": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\src\\main\\res\\drawable\\pieas.jpg"
     },
     {
-        "merged": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\settings.png",
-        "source": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\src\\main\\res\\drawable\\settings.png"
+        "merged": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\test.png",
+        "source": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\src\\main\\res\\drawable\\test.png"
     },
     {
-        "merged": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\album8.png",
-        "source": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\src\\main\\res\\drawable\\album8.png"
+        "merged": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_ab_back_material.xml",
+        "source": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_ic_ab_back_material.xml"
     },
     {
-        "merged": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_track_material.xml",
-        "source": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_seekbar_track_material.xml"
+        "merged": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\album5.png",
+        "source": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\src\\main\\res\\drawable\\album5.png"
     },
     {
-        "merged": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\album10.png",
-        "source": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\src\\main\\res\\drawable\\album10.png"
+        "merged": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\fast.jpg",
+        "source": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\src\\main\\res\\drawable\\fast.jpg"
     },
     {
-        "merged": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\university.png",
-        "source": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\src\\main\\res\\drawable\\university.png"
+        "merged": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\album8.png",
+        "source": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\src\\main\\res\\drawable\\album8.png"
     },
     {
-        "merged": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
-        "source": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
+        "merged": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_top_material.xml",
+        "source": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_cab_background_top_material.xml"
     },
     {
-        "merged": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
-        "source": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_btn_check_material.xml"
+        "merged": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\splash_background.jpg",
+        "source": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\src\\main\\res\\drawable\\splash_background.jpg"
     },
     {
-        "merged": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_top_material.xml",
-        "source": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_cab_background_top_material.xml"
+        "merged": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\album11.png",
+        "source": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\src\\main\\res\\drawable\\album11.png"
     },
     {
-        "merged": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_radio_material.xml",
-        "source": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_btn_radio_material.xml"
+        "merged": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\giki.jpg",
+        "source": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\src\\main\\res\\drawable\\giki.jpg"
     },
     {
-        "merged": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_material.xml",
-        "source": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_ratingbar_material.xml"
+        "merged": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\air.jpg",
+        "source": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\src\\main\\res\\drawable\\air.jpg"
     },
     {
-        "merged": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\album4.png",
-        "source": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\src\\main\\res\\drawable\\album4.png"
+        "merged": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
+        "source": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_btn_borderless_material.xml"
     },
     {
-        "merged": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_indicator_material.xml",
-        "source": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_ratingbar_indicator_material.xml"
+        "merged": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_light.xml",
+        "source": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_item_background_holo_light.xml"
     },
     {
-        "merged": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_light.xml",
-        "source": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_item_background_holo_light.xml"
+        "merged": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\album10.png",
+        "source": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\src\\main\\res\\drawable\\album10.png"
     },
     {
-        "merged": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_voice_search_api_material.xml",
-        "source": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_ic_voice_search_api_material.xml"
+        "merged": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\album6.png",
+        "source": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\src\\main\\res\\drawable\\album6.png"
     },
     {
-        "merged": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\test.png",
-        "source": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\src\\main\\res\\drawable\\test.png"
+        "merged": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cover.jpg",
+        "source": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\src\\main\\res\\drawable\\cover.jpg"
     },
     {
-        "merged": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_tick_mark_material.xml",
-        "source": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_seekbar_tick_mark_material.xml"
+        "merged": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
+        "source": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_list_selector_holo_dark.xml"
     },
     {
-        "merged": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
-        "source": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_textfield_search_material.xml"
+        "merged": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",
+        "source": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
     },
     {
-        "merged": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\album3.png",
-        "source": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\src\\main\\res\\drawable\\album3.png"
+        "merged": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_voice_search_api_material.xml",
+        "source": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_ic_voice_search_api_material.xml"
     },
     {
-        "merged": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_go_search_api_material.xml",
-        "source": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_ic_go_search_api_material.xml"
+        "merged": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\comsats.jpg",
+        "source": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\src\\main\\res\\drawable\\comsats.jpg"
     },
     {
-        "merged": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
-        "source": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_item_background_holo_dark.xml"
+        "merged": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\album7.png",
+        "source": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\src\\main\\res\\drawable\\album7.png"
     },
     {
-        "merged": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
-        "source": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
+        "merged": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\banner.jpg",
+        "source": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\src\\main\\res\\drawable\\banner.jpg"
     },
     {
-        "merged": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",
-        "source": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
+        "merged": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\nust.jpg",
+        "source": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\src\\main\\res\\drawable\\nust.jpg"
     },
     {
-        "merged": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\fast.jpg",
-        "source": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\src\\main\\res\\drawable\\fast.jpg"
+        "merged": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\album1.png",
+        "source": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\src\\main\\res\\drawable\\album1.png"
     },
     {
-        "merged": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_internal_bg.xml",
-        "source": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_cab_background_internal_bg.xml"
+        "merged": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
+        "source": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_item_background_holo_dark.xml"
     },
     {
-        "merged": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_dots.png",
-        "source": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\src\\main\\res\\drawable\\ic_dots.png"
+        "merged": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\album9.png",
+        "source": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\src\\main\\res\\drawable\\album9.png"
     },
     {
-        "merged": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\taxila.jpg",
-        "source": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\src\\main\\res\\drawable\\taxila.jpg"
+        "merged": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background.xml",
+        "source": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_dialog_material_background.xml"
     },
     {
-        "merged": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\album6.png",
-        "source": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\src\\main\\res\\drawable\\album6.png"
+        "merged": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\album4.png",
+        "source": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\src\\main\\res\\drawable\\album4.png"
     },
     {
-        "merged": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\album9.png",
-        "source": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\src\\main\\res\\drawable\\album9.png"
+        "merged": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\taxila.jpg",
+        "source": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\src\\main\\res\\drawable\\taxila.jpg"
     },
     {
-        "merged": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background.xml",
-        "source": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_dialog_material_background.xml"
+        "merged": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
+        "source": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
     },
     {
-        "merged": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\nust.jpg",
-        "source": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\src\\main\\res\\drawable\\nust.jpg"
+        "merged": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_go_search_api_material.xml",
+        "source": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_ic_go_search_api_material.xml"
     },
     {
-        "merged": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_menu_overflow_material.xml",
-        "source": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_ic_menu_overflow_material.xml"
+        "merged": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_fab_background.xml",
+        "source": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.1.1\\res\\drawable\\design_fab_background.xml"
     },
     {
-        "merged": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\comsats.jpg",
-        "source": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\src\\main\\res\\drawable\\comsats.jpg"
+        "merged": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
+        "source": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_list_selector_holo_light.xml"
     },
     {
-        "merged": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
-        "source": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_spinner_textfield_background_material.xml"
+        "merged": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\university.png",
+        "source": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\src\\main\\res\\drawable\\university.png"
     },
     {
-        "merged": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_thumb_material.xml",
-        "source": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_seekbar_thumb_material.xml"
+        "merged": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
+        "source": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
     },
     {
-        "merged": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_fab_background.xml",
-        "source": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.1.1\\res\\drawable\\design_fab_background.xml"
+        "merged": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_snackbar_background.xml",
+        "source": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.1.1\\res\\drawable\\design_snackbar_background.xml"
     }
 ]

@@ -26,7 +26,8 @@ public class MainActivity extends AppCompatActivity {
     private List<University> universityList;
     //url
     //private String url = "http://project-demos.com/video/api/web/v1/products?lang=2&expand=cookbyweight,cookbythickness,productnames,cuts,cutnames,productlanguages";
-
+    //private String url="http://localhost:55336/api/UniversityValues/GetAllUniversities";
+    private String url="http://192.168.0.135/chooza/api/UniversityValues/GetAllUniversities";
     // JSON Node names
     private  static final String TAG_STUDENT= "Student";
     private  static final String TAG_TEST= "Test";
@@ -45,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
 
     // Hashmap for ListView
     ArrayList<HashMap<String, String>> universities;
-
+    ArrayList<University> university;
 
     DrawerLayout mDrawerLayout;
     NavigationView mNavigationView;
@@ -123,24 +124,5 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-    private class GetRecords extends AsyncTask<Void, Void, Void>{
-        @Override
-        protected void onPreExecute() {
-            super.onPreExecute();
-        }
-        @Override
-        protected Void doInBackground(Void... voids) {
-            return null;
-        }
-        protected void onPostExecute(Void result) {
-            super.onPostExecute(result);
-            // CustomJSONadapter adapter1 = new CustomJSONadapter(getApplicationContext(),animals) ;
-           /* ListAdapter adapter = new SimpleAdapter(
-                    MainActivity.this, product,
-                    R.layout.list_item, new String[] { TAG_ID, TAG_PRODUCTS_ID, TAG_CUT_NAME}, new int[] { R.id.name,
-                    R.id.id, R.id.productname});
-            setListAdapter(adapter);*/
-        }
 
-    }
 }

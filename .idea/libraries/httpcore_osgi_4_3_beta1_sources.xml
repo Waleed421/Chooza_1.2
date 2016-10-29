@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="httpcore-osgi-4.3-beta1-sources">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/httpcore-osgi-4.3-beta1-sources.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

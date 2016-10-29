@@ -1,10 +1,10 @@
 [
     {
-        "merged": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_album.xml",
-        "source": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\src\\main\\res\\menu\\menu_album.xml"
+        "merged": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\menu\\drawermenu.xml",
+        "source": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\src\\main\\res\\menu\\drawermenu.xml"
     },
     {
-        "merged": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\menu\\drawermenu.xml",
-        "source": "C:\\Users\\wal\\Documents\\Android Studio\\Chooza_1.2\\app\\src\\main\\res\\menu\\drawermenu.xml"
+        "merged": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_album.xml",
+        "source": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\src\\main\\res\\menu\\menu_album.xml"
     }
 ]
