@@ -4,10 +4,11 @@
 
     <item android:title="Take Test"
         android:id="@+id/test"
-        android:icon="@drawable/test"/>
+        android:icon="@drawable/test"
+        />
 
     <item android:title="Find Universities"
-        android:id="@+id/univerity"
+        android:id="@+id/university"
         android:icon="@drawable/university"/>
 
 

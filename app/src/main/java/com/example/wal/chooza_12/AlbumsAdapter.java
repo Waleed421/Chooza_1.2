@@ -25,6 +25,7 @@ public class AlbumsAdapter extends RecyclerView.Adapter<AlbumsAdapter.MyViewHold
     private Context mContext;
     private List<Album> albumList;
     private final String YOUR_URL = "https://www.comsats.edu.pk/";
+    public String[] URL= new String[196];
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
         public TextView title, count;
@@ -54,10 +55,20 @@ public class AlbumsAdapter extends RecyclerView.Adapter<AlbumsAdapter.MyViewHold
     }
 
     @Override
-    public void onBindViewHolder(final MyViewHolder holder, int position) {
+    public void onBindViewHolder(final MyViewHolder holder, final int position) {
         Album album = albumList.get(position);
         holder.title.setText(album.getName());
         holder.count.setText(album.getNumOfSongs() + " programs");
+        URL[position]=album.getWebsite();
+
+        holder.title.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent= new Intent(Intent.ACTION_VIEW, Uri.parse(URL[position]));
+                mContext.startActivity(intent);
+            }
+
+        });
 
         // loading album cover using Glide library
         Glide.with(mContext).load(album.getThumbnail()).into(holder.thumbnail);
@@ -98,6 +109,7 @@ public class AlbumsAdapter extends RecyclerView.Adapter<AlbumsAdapter.MyViewHold
                     return true;
                 case R.id.action_play_next:
                     //Toast.makeText(mContext, "Website Link", Toast.LENGTH_SHORT).show();
+                    //Album album = albumList.get(position);
                     Intent intent= new Intent(Intent.ACTION_VIEW, Uri.parse(YOUR_URL));
                     mContext.startActivity(intent);
                     return true;

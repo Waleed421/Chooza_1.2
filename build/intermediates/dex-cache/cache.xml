@@ -52,7 +52,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.1"
-        sha1="db23b4367993831fa120653143736ddf2621e0b8">
+        sha1="3d7afdd2076a91c2d9a9282f27fea6921c69c344">
         <dex dex="C:\Users\Waleed-PC\Documents\ChoozaApp-20161016T182023Z\ChoozaApp\Chooza_1.2\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_d352ff3b94eece5dbe52fcb689148eaf2aafc69b\classes.dex" />
     </item>
     <item
@@ -115,7 +115,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.1"
-        sha1="e6003da043982b5a033b2c6a9801cf38288a3ec6">
+        sha1="b349ea52cb057a01a704dc90f5dffcc294c24dce">
         <dex dex="C:\Users\Waleed-PC\Documents\ChoozaApp-20161016T182023Z\ChoozaApp\Chooza_1.2\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_e8abf3955f13bc67ed5ee2b58d643271e9752310\classes.dex" />
     </item>
 

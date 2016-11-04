@@ -22,11 +22,14 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStreamWriter;
@@ -49,6 +52,7 @@ public class SearchUniversity extends AppCompatActivity {
     //url
     //private String url = "http://project-demos.com/video/api/web/v1/products?lang=2&expand=cookbyweight,cookbythickness,productnames,cuts,cutnames,productlanguages";
     private String url="http://192.168.0.137/chooza/api/UniversityValues/GetAllUniversities";
+    Context ctx;
     // JSON Node names
     private  static final String TAG_STUDENT= "Student";
     private  static final String TAG_TEST= "Test";
@@ -81,7 +85,7 @@ public class SearchUniversity extends AppCompatActivity {
 
         albumList = new ArrayList<>();
         adapter = new AlbumsAdapter(this, albumList);
-        new GetRecords().execute();
+        //new GetRecords().execute();
 
         RecyclerView.LayoutManager mLayoutManager = new GridLayoutManager(this, 2);
         recyclerView.setLayoutManager(mLayoutManager);
@@ -89,7 +93,23 @@ public class SearchUniversity extends AppCompatActivity {
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setAdapter(adapter);
 
-        prepareAlbums();
+        //prepareAlbums();
+        try {
+            JSONArray jr = new JSONArray(readFromFile(SearchUniversity.this , "uniJson.txt"));
+            for (int i = 0; i<jr.length(); i++)
+            {
+                JSONObject jsonobject= (JSONObject) jr.get(i);
+                //System.out.println(jsonobject.optString("Id"));
+                System.out.println(jsonobject.optString("Name"));
+                prepareAlbums(jsonobject.optString("Name"), jsonobject.optString("City"), jsonobject.optString("Website"));
+            }
+            //JSONObject jj = new JSONObject();
+            //jj = (JSONObject) jj.get("Name");
+            //System.out.println(jj.toString());
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
 
         try {
             Glide.with(this).load(R.drawable.banner).into((ImageView) findViewById(R.id.backdrop));
@@ -141,7 +161,7 @@ public class SearchUniversity extends AppCompatActivity {
             ServiceHandler sh = new ServiceHandler();
             // Making a request to url and getting response
             String jsonStr = sh.makeServiceCall(url, ServiceHandler.GET);
-            //writeToFile(jsonStr, SearchUniversity.this);
+
             /*byte[] array = jsonStr.getBytes();
             Log.d("Response: ", "> " + jsonStr);
             if (jsonStr != null) {
@@ -161,11 +181,12 @@ public class SearchUniversity extends AppCompatActivity {
             }*/
             try {
             JSONArray jr = new JSONArray(readFromFile(SearchUniversity.this , "Json.txt"));
-            for (int i = 0; i<jr.length(); i++)
+            for (int i = 0; i<10; i++)
             {
                 JSONObject jsonobject= (JSONObject) jr.get(i);
-                System.out.println(jsonobject.optString("Id"));
+                //System.out.println(jsonobject.optString("Id"));
                 System.out.println(jsonobject.optString("Name"));
+                //prepareAlbums(jsonobject.optString("Name"), jsonobject.optString("City"));
             }
             //JSONObject jj = new JSONObject();
             //jj = (JSONObject) jj.get("Name");
@@ -192,7 +213,7 @@ public class SearchUniversity extends AppCompatActivity {
     /**
      * Adding few albums for testing
      */
-    private void prepareAlbums() {
+    private void prepareAlbums(String Name, String City, String Website) {
         int[] covers = new int[]{
                 R.drawable.comsats,
                 R.drawable.lahore,
@@ -205,8 +226,9 @@ public class SearchUniversity extends AppCompatActivity {
                 R.drawable.ist,
                 R.drawable.air,
                 R.drawable.university};
-
-        Album a = new Album("COMSATS Institute of Information Technology", 13, covers[0]);
+        Album a = new Album(Name, 13, covers[8], Website);
+        albumList.add(a);
+        /*Album a = new Album("COMSATS Institute of Information Technology", 13, covers[0]);
         albumList.add(a);
 
         a = new Album("University of Engineering & Technology, Lahore", 8, covers[1]);
@@ -234,7 +256,7 @@ public class SearchUniversity extends AppCompatActivity {
         albumList.add(a);
 
         a = new Album("Air University", 17, covers[9]);
-        albumList.add(a);
+        albumList.add(a);*/
 
         adapter.notifyDataSetChanged();
     }
@@ -297,14 +319,19 @@ public class SearchUniversity extends AppCompatActivity {
             return "" ;
         }
     }
-    private void writeToFile(String data,Context context) {
-        try {
-            OutputStreamWriter outputStreamWriter = new OutputStreamWriter(context.openFileOutput("/assets/config.txt", Context.MODE_PRIVATE));
-            outputStreamWriter.write(data);
-            outputStreamWriter.close();
+    public void saveToFile(String FILENAME, String Json)
+    {
+        FileOutputStream fos;
+        String object=Json;
+
+        try
+        {
+            fos = ctx.openFileOutput(FILENAME, Context.MODE_WORLD_WRITEABLE);//IT SHOULD BE PRIVATE MODE
+            fos.write(object.getBytes());
+            fos.close();
         }
-        catch (IOException e) {
-            Log.e("Exception", "File write failed: " + e.toString());
-        }
+        catch (FileNotFoundException e) { e.printStackTrace(); }
+        catch (IOException e) { e.printStackTrace(); }
+        Toast.makeText(ctx,"SHAYAN:Saving in phone sucessfull",Toast.LENGTH_SHORT).show();
     }
 }

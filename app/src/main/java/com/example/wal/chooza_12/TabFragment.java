@@ -90,7 +90,7 @@ public class TabFragment extends Fragment {
                 case 0 :
                     return "Take Test";
                 case 1 :
-                    return "Univerities";
+                    return "Universities";
                 case 2 :
                     return "Settings";
             }

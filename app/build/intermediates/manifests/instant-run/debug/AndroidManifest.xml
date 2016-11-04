@@ -20,6 +20,8 @@
         <activity android:name="com.example.wal.chooza_12.MainActivity" />
         <activity android:name="com.example.wal.chooza_12.SearchUniversity" >
         </activity>
+        <activity android:name="com.example.wal.chooza_12.TakeTest" >
+        </activity>
         <!-- Splash screen -->
         <activity
             android:name="com.example.wal.chooza_12.SplashScreen"

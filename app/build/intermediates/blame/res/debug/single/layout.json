@@ -8,12 +8,12 @@
         "source": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\src\\main\\res\\layout\\primary_layout.xml"
     },
     {
-        "merged": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view.xml",
-        "source": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\layout\\abc_activity_chooser_view.xml"
-    },
-    {
         "merged": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_bottom_sheet_dialog.xml",
         "source": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.1.1\\res\\layout\\design_bottom_sheet_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view.xml",
+        "source": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\layout\\abc_activity_chooser_view.xml"
     },
     {
         "merged": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_title_item.xml",
@@ -40,12 +40,16 @@
         "source": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\layout\\abc_screen_toolbar.xml"
     },
     {
+        "merged": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_item_layout.xml",
+        "source": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\layout\\abc_action_menu_item_layout.xml"
+    },
+    {
         "merged": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_text.xml",
         "source": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.1.1\\res\\layout\\design_layout_tab_text.xml"
     },
     {
-        "merged": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_item_layout.xml",
-        "source": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\layout\\abc_action_menu_item_layout.xml"
+        "merged": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\questionlist_item.xml",
+        "source": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\src\\main\\res\\layout\\questionlist_item.xml"
     },
     {
         "merged": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_header_item_layout.xml",
@@ -62,6 +66,10 @@
     {
         "merged": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_dialog_title_material.xml",
         "source": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\layout\\abc_dialog_title_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\test_take.xml",
+        "source": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\src\\main\\res\\layout\\test_take.xml"
     },
     {
         "merged": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_media.xml",
@@ -98,6 +106,10 @@
     {
         "merged": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_media_action.xml",
         "source": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\layout\\notification_media_action.xml"
+    },
+    {
+        "merged": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\testing.xml",
+        "source": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\src\\main\\res\\layout\\testing.xml"
     },
     {
         "merged": "C:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_layout.xml",

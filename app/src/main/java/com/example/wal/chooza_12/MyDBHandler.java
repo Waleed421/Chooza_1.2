@@ -38,7 +38,7 @@ public class MyDBHandler extends SQLiteOpenHelper{
     private  static final String TAG_QUESTION= "Question";
     private static final String COLUMN_QUESTIONID="Question_ID";
     private static final String COLUMN_STATEMENT="Statement";
-    private static final String COLUMN_RESULT="Result";
+    private static final String COLUMN_TYPE="Type";
 
     //Option Table
     private  static final String TAG_OPTION= "Option";
@@ -109,14 +109,17 @@ public class MyDBHandler extends SQLiteOpenHelper{
     }
 
     @Override
-    public void onCreate(SQLiteDatabase sqLiteDatabase) {
-
+    public void onCreate(SQLiteDatabase db) {
+        String CREATE_QUESTION_TABLE = "CREATE TABLE " + TAG_QUESTION + "("
+                + COLUMN_QUESTIONID + " TEXT," + COLUMN_STATEMENT + " TEXT,"
+                + COLUMN_TYPE + " TEXT" + ")";
+        db.execSQL(CREATE_QUESTION_TABLE);
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int i, int i1) {
         // Drop older table if existed
-        db.execSQL("DROP TABLE IF EXISTS " + TAG_STUDENT);
+        db.execSQL("DROP TABLE IF EXISTS " + TAG_QUESTION);
         // Creating tables again
         onCreate(db);
     }
@@ -234,11 +237,37 @@ public class MyDBHandler extends SQLiteOpenHelper{
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
         values.put(COLUMN_QUESTIONID, question.getQuestion_ID());
-        values.put(COLUMN_TESTID, question.getTest_ID());
         values.put(COLUMN_STATEMENT, question.getStatement());
-        values.put(COLUMN_RESULT, question.getResult());
+        values.put(COLUMN_TYPE, question.getType());
         db.insert(TAG_QUESTION, null, values);
         db.close(); // Closing database connection
+
+    }
+    // Getting All Questions
+    public List<Question> getAllQuestions() {
+
+        List<Question> questionList = new ArrayList<Question>();
+        // Select All Query
+        String selectQuery = "SELECT  * FROM " + TAG_QUESTION;
+
+        SQLiteDatabase db = this.getWritableDatabase();
+        db.isOpen();
+        Cursor cursor = db.rawQuery(selectQuery, null);
+
+        // looping through all rows and adding to list
+        if (cursor.moveToFirst()) {
+            do {
+                Question question = new Question();
+                question.setQuestion_ID((cursor.getString(0)));
+                question.setStatement(cursor.getString(1));
+                question.setType(cursor.getString(2));
+                // Adding question to list
+                questionList.add(question);
+            } while (cursor.moveToNext());
+        }
+
+        // return question list
+        return questionList;
     }
 
     //Adding new Option

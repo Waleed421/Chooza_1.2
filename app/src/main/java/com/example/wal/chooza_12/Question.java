@@ -4,26 +4,25 @@ package com.example.wal.chooza_12;
  * Created by wal on 9/17/2016.
  */
 public class Question {
-    private int Question_ID;
-    private int Test_ID;
-    private String Statement;
-    private String Result;
-
-    public int getQuestion_ID() {
+    public String getQuestion_ID() {
         return Question_ID;
     }
 
-    public void setQuestion_ID(int question_ID) {
+    public void setQuestion_ID(String question_ID) {
         Question_ID = question_ID;
     }
 
-    public int getTest_ID() {
-        return Test_ID;
+    public Question(String question_ID, String statement, String type) {
+        Question_ID = question_ID;
+        Statement = statement;
+        Type = type;
     }
+    public Question(){}
+    private String Question_ID;
+    private String Statement;
+    private String Type;
 
-    public void setTest_ID(int test_ID) {
-        Test_ID = test_ID;
-    }
+
 
     public String getStatement() {
         return Statement;
@@ -32,13 +31,15 @@ public class Question {
     public void setStatement(String statement) {
         Statement = statement;
     }
-
-    public String getResult() {
-        return Result;
+    public String getType() {
+        return Type;
     }
 
-    public void setResult(String result) {
-        Result = result;
+    public void setType(String type) {
+        Type = type;
     }
+
+
+
 
 }

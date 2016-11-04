@@ -91,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
 
                 }
 
-                if (menuItem.getItemId() == R.id.univerity) {
+                if (menuItem.getItemId() == R.id.university) {
                     FragmentTransaction xfragmentTransaction = mFragmentManager.beginTransaction();
                     xfragmentTransaction.replace(R.id.containerView,new UniversityFragment()).commit();
                 }
@@ -125,4 +125,14 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    public void displayTest(View view) {
+        Button button1 = (Button) findViewById(R.id.buttonTakeTest);
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(), TakeTest.class);
+                startActivity(intent);
+            }
+        });
+    }
 }

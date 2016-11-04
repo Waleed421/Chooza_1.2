@@ -14,6 +14,10 @@
             android:name=".SearchUniversity" >
 
         </activity>
+        <activity
+            android:name=".TakeTest" >
+
+        </activity>
         <!-- Splash screen -->
         <activity
             android:name=".SplashScreen"

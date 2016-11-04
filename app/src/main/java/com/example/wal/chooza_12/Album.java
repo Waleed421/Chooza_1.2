@@ -7,14 +7,26 @@ public class Album {
     private String name;
     private int numOfSongs;
     private int thumbnail;
+    private String website;
+
+    public String getWebsite() {
+        return website;
+    }
+
+    public void setWebsite(String website) {
+        this.website = website;
+    }
+
+
 
     public Album() {
     }
 
-    public Album(String name, int numOfSongs, int thumbnail) {
+    public Album(String name, int numOfSongs, int thumbnail, String website) {
         this.name = name;
         this.numOfSongs = numOfSongs;
         this.thumbnail = thumbnail;
+        this.website= website;
     }
 
     public String getName() {
