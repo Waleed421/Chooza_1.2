@@ -269,7 +269,15 @@ public class MyDBHandler extends SQLiteOpenHelper{
         // return question list
         return questionList;
     }
-
+    //Deleting all questions
+    public void deleteAllQuestions()
+    {
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues values = new ContentValues();
+        String deleteQuery = "DELETE  FROM " + TAG_QUESTION;
+        db.isOpen();
+        db.execSQL(deleteQuery);
+    }
     //Adding new Option
     public  void addOption(Option option)
     {

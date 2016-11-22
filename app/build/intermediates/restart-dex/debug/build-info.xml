@@ -5,43 +5,37 @@
     density="xhdpi"
     format="8"
     plugin-version="2.2.2"
-    timestamp="191825247885017"
+    timestamp="370556626241929"
     token="2807759074756553779"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="653" />
+        duration="384" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="101" />
+        duration="41" />
     <task
         name="verifier"
-        duration="26" />
+        duration="6" />
 
-    <artifact
-        location="C:\Users\Waleed-PC\Documents\ChoozaApp-20161016T182023Z\ChoozaApp\Chooza_1.2\app\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
-        type="RESOURCES" />
     <artifact
         location="C:\Users\Waleed-PC\Documents\ChoozaApp-20161016T182023Z\ChoozaApp\Chooza_1.2\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_5\classes.dex"
         type="DEX" />
 
     <build
-        timestamp="189177577224542"
+        timestamp="369589679828181"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="C:\Users\Waleed-PC\Documents\ChoozaApp-20161016T182023Z\ChoozaApp\Chooza_1.2\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
     </build>
     <build
-        timestamp="191825247885017"
+        timestamp="370556626241929"
         verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="C:\Users\Waleed-PC\Documents\ChoozaApp-20161016T182023Z\ChoozaApp\Chooza_1.2\app\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
-            type="RESOURCES" />
         <artifact
             location="C:\Users\Waleed-PC\Documents\ChoozaApp-20161016T182023Z\ChoozaApp\Chooza_1.2\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_5\classes.dex"
             type="DEX" />

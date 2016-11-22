@@ -2,7 +2,6 @@ package com.example.wal.chooza_12;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.FragmentManager;
@@ -57,6 +56,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
         databaseHandler = new MyDBHandler(MainActivity.this);
         universities = new ArrayList<HashMap<String, String>>();
 
@@ -64,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
          *Setup the DrawerLayout and NavigationView
          */
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawerLayout);
-        mNavigationView = (NavigationView) findViewById(R.id.shitstuff) ;
+        mNavigationView = (NavigationView) findViewById(R.id.shitstuff);
 
         /**
          * Lets inflate the very first fragment
@@ -121,6 +122,18 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(v.getContext(), SearchUniversity.class);
                 startActivity(intent);
+            }
+        });
+    }
+    public void viewOfferings(View view)
+    {
+        Button button= (Button)findViewById(R.id.buttonOfferings);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Pass Program Id here
+                ProgramFragment pf= new ProgramFragment();
+                System.out.println(pf.selectedItemText);
             }
         });
     }

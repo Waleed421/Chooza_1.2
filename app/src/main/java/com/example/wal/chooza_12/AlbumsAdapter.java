@@ -64,8 +64,12 @@ public class AlbumsAdapter extends RecyclerView.Adapter<AlbumsAdapter.MyViewHold
         holder.title.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
+                //Intent intent= new Intent(Intent.ACTION_VIEW, Uri.parse(URL[position]));
                 Intent intent= new Intent(Intent.ACTION_VIEW, Uri.parse(URL[position]));
                 mContext.startActivity(intent);
+                /*Intent i = new Intent(Intent.ACTION_VIEW);
+                i.setData(Uri.parse(URL[position]));
+                mContext.startActivity(i);*/
             }
 
         });

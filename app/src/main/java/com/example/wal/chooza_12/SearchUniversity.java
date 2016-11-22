@@ -12,17 +12,13 @@ import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.util.TypedValue;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.ListView;
-import android.app.ListActivity;
-import android.app.ProgressDialog;
-import android.os.AsyncTask;
-import android.os.Bundle;
-import android.util.Log;
-import android.widget.ListView;
 import android.widget.Toast;
+
+import com.bumptech.glide.Glide;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -32,16 +28,9 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.OutputStreamWriter;
-import java.util.ArrayList;
-import java.util.HashMap;
-
-import com.bumptech.glide.Glide;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-import java.util.jar.Attributes;
 
 public class SearchUniversity extends AppCompatActivity {
 
@@ -49,9 +38,12 @@ public class SearchUniversity extends AppCompatActivity {
     private AlbumsAdapter adapter;
     private List<Album> albumList;
     private List<University> universityList;
+    private static String SelectedCity;
+
+
     //url
     //private String url = "http://project-demos.com/video/api/web/v1/products?lang=2&expand=cookbyweight,cookbythickness,productnames,cuts,cutnames,productlanguages";
-    private String url="http://192.168.0.137/chooza/api/UniversityValues/GetAllUniversities";
+    //private String url="http://192.168.0.137/chooza/api/UniversityValues/GetAllUniversities";
     Context ctx;
     // JSON Node names
     private  static final String TAG_STUDENT= "Student";
@@ -74,33 +66,41 @@ public class SearchUniversity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.university_search);
+        UniversityFragment uf= new UniversityFragment();
+        SelectedCity= uf.selectedCity;
         databaseHandler = new MyDBHandler(SearchUniversity.this);
         universities = new ArrayList<HashMap<String, String>>();
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
         initCollapsingToolbar();
 
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
 
         albumList = new ArrayList<>();
         adapter = new AlbumsAdapter(this, albumList);
-        //new GetRecords().execute();
+
+
 
         RecyclerView.LayoutManager mLayoutManager = new GridLayoutManager(this, 2);
         recyclerView.setLayoutManager(mLayoutManager);
         recyclerView.addItemDecoration(new GridSpacingItemDecoration(2, dpToPx(10), true));
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setAdapter(adapter);
+        //new GetRecords().execute();
 
-        //prepareAlbums();
         try {
-            JSONArray jr = new JSONArray(readFromFile(SearchUniversity.this , "uniJson.txt"));
+            // Creating service handler class instance
+            ServiceHandler sh = new ServiceHandler();
+            String url="http://192.168.0.106/Chooza/API/GetAllUniversities";
+            //String jsonStr = (sh.makeServiceCall(url, ServiceHandler.GET));
+            String jsonStr = (readFromFile(SearchUniversity.this , "uniJson.txt"));
+            JSONArray jr = new JSONArray(jsonStr);
             for (int i = 0; i<jr.length(); i++)
             {
                 JSONObject jsonobject= (JSONObject) jr.get(i);
-                //System.out.println(jsonobject.optString("Id"));
+                System.out.println(jsonobject.optString("Id"));
                 System.out.println(jsonobject.optString("Name"));
+                if(jsonobject.optString("City").equals(SelectedCity))
                 prepareAlbums(jsonobject.optString("Name"), jsonobject.optString("City"), jsonobject.optString("Website"));
             }
             //JSONObject jj = new JSONObject();
@@ -159,11 +159,9 @@ public class SearchUniversity extends AppCompatActivity {
         protected Void doInBackground(Void... voids) {
             // Creating service handler class instance
             ServiceHandler sh = new ServiceHandler();
-            // Making a request to url and getting response
-            String jsonStr = sh.makeServiceCall(url, ServiceHandler.GET);
+            String url="http://192.168.5.100/Chooza/API/GetAllUniversities";
+            String jsonStr = (sh.makeServiceCall(url, ServiceHandler.GET));
 
-            /*byte[] array = jsonStr.getBytes();
-            Log.d("Response: ", "> " + jsonStr);
             if (jsonStr != null) {
                 try {
 
@@ -171,15 +169,19 @@ public class SearchUniversity extends AppCompatActivity {
                     for (int i = 0; i < jr.length(); i++) {
                         JSONObject jsonobject = jr.getJSONObject(i);
                         String name = jsonobject.getString("Name");
+                        String city = jsonobject.getString("City");
+                        String website = jsonobject.getString("Website");
                         System.out.println(name);
+                        prepareAlbums(name, city, website);
+                        //prepareAlbums(jsonobject.optString("Name"), jsonobject.optString("City"), jsonobject.optString("Website"));
                     }
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
             } else {
                 Log.e("ServiceHandler", "Couldn't get any data from the url");
-            }*/
-            try {
+            }
+            /*try {
             JSONArray jr = new JSONArray(readFromFile(SearchUniversity.this , "Json.txt"));
             for (int i = 0; i<10; i++)
             {
@@ -194,7 +196,7 @@ public class SearchUniversity extends AppCompatActivity {
         } catch (JSONException e) {
             e.printStackTrace();
         }
-
+*/
             return null;
         }
 
@@ -332,6 +334,6 @@ public class SearchUniversity extends AppCompatActivity {
         }
         catch (FileNotFoundException e) { e.printStackTrace(); }
         catch (IOException e) { e.printStackTrace(); }
-        Toast.makeText(ctx,"SHAYAN:Saving in phone sucessfull",Toast.LENGTH_SHORT).show();
+        Toast.makeText(ctx,"Waleed:Saving in phone sucessfull",Toast.LENGTH_SHORT).show();
     }
 }

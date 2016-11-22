@@ -65,7 +65,7 @@ public class TabFragment extends Fragment {
             switch (position){
                 case 0 : return new TestFragment();
                 case 1 : return new UniversityFragment();
-                case 2 : return new PrimaryFragment();
+                case 2 : return new ProgramFragment();
                 //case 1 : return new SocialFragment();
                 //case 2 : return new UpdatesFragment();
             }
@@ -92,7 +92,7 @@ public class TabFragment extends Fragment {
                 case 1 :
                     return "Universities";
                 case 2 :
-                    return "Settings";
+                    return "Programs";
             }
             return null;
         }

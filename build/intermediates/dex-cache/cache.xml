@@ -12,6 +12,15 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\Users\Waleed-PC\.gradle\caches\modules-2\files-2.1\com.jakewharton\butterknife\6.1.0\63735f48b82bcd24cdd33821342428252eb1ca5a\butterknife-6.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="63735f48b82bcd24cdd33821342428252eb1ca5a">
+        <dex dex="C:\Users\Waleed-PC\Documents\ChoozaApp-20161016T182023Z\ChoozaApp\Chooza_1.2\app\build\intermediates\transforms\dex\debug\folders\1000\10\butterknife-6.1.0_19f82ed173635144a311c6e17d35df72225b6460\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\Waleed-PC\.gradle\caches\modules-2\files-2.1\com.github.bumptech.glide\glide\3.7.0\9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4\glide-3.7.0.jar"
         jumboMode="true"
         optimize="true"
@@ -52,7 +61,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.1"
-        sha1="3d7afdd2076a91c2d9a9282f27fea6921c69c344">
+        sha1="663da4a6bab240be51ff521bd368f94979c9290b">
         <dex dex="C:\Users\Waleed-PC\Documents\ChoozaApp-20161016T182023Z\ChoozaApp\Chooza_1.2\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_d352ff3b94eece5dbe52fcb689148eaf2aafc69b\classes.dex" />
     </item>
     <item
@@ -115,7 +124,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.1"
-        sha1="b349ea52cb057a01a704dc90f5dffcc294c24dce">
+        sha1="903ba190ac926ad6eb03a8b6bf4e383a14597d7f">
         <dex dex="C:\Users\Waleed-PC\Documents\ChoozaApp-20161016T182023Z\ChoozaApp\Chooza_1.2\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_e8abf3955f13bc67ed5ee2b58d643271e9752310\classes.dex" />
     </item>
 

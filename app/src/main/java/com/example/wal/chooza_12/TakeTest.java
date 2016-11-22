@@ -7,11 +7,13 @@ import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.util.SparseBooleanArray;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
-import android.widget.ListAdapter;
-import android.widget.SimpleAdapter;
+import android.widget.Button;
+import android.widget.ListView;
 import android.widget.Toast;
 
 import org.json.JSONArray;
@@ -19,43 +21,16 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.BufferedReader;
-import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import android.app.AlertDialog;
-import android.content.Context;
-import android.widget.Toast;
-
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
-
-import android.app.Activity;
-import android.content.pm.ApplicationInfo;
-import android.content.pm.PackageInfo;
-import android.content.pm.PackageManager;
-import android.os.Bundle;
-import android.view.Menu;
-import android.view.View;
-import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemClickListener;
-import android.widget.Button;
-import android.widget.CheckBox;
-import android.widget.ListView;
-import android.widget.TextView;
-import android.widget.Toast;
-import static java.security.AccessController.getContext;
 
 
 /**
@@ -63,8 +38,8 @@ import static java.security.AccessController.getContext;
  */
 
 public class TakeTest extends AppCompatActivity{
-    private String url="http://192.168.0.134/chooza/api/QuestionValues/GetAllQuestions";
-    private String urlu="http://192.168.0.134/chooza/api/UniversityValues/GetAllUniversities";
+    //private String url="http://172.20.103.77/chooza/api/QuestionValues/GetAllQuestions";
+    private String urlu="http://192.168.10.19/chooza/api/UniversityValues/GetAllUniversities";
     private MyDBHandler databaseHandler;
     // Hashmap for ListView
     ArrayList<HashMap<String, String>> questions;
@@ -74,10 +49,17 @@ public class TakeTest extends AppCompatActivity{
     SparseBooleanArray sparseBooleanArray ;
     DrawerLayout mDrawerLayout;
     NavigationView mNavigationView;
+    private int RealisticCount;
+    private int InvestigativeCount;
+    private int ArtisticCount;
+    private int SocialCount;
+    private int EnterprisingCount;
+    private int ConventionalCount;
+    private int[] personalityTypeArray= new int[6];
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.test_take);
+        setContentView(R.layout.test_take1);
         listview = (ListView)findViewById(R.id.listView);
         new GetRecords().execute();
         databaseHandler = new MyDBHandler(TakeTest.this);
@@ -95,7 +77,7 @@ public class TakeTest extends AppCompatActivity{
 
         //questions = new ArrayList<HashMap<String, String>>();
         // Reading all questions
-        Log.d("Reading: ", "Reading all questions..");
+        /*Log.d("Reading: ", "Reading all questions..");
 
         List<Question> questions = databaseHandler.getAllQuestions();
 
@@ -103,7 +85,7 @@ public class TakeTest extends AppCompatActivity{
             String log = "Id: " + qu.getQuestion_ID() + " ,Statement: " + qu.getStatement() + " ,Type: " + qu.getType();
             // Writing Questions to log
             Log.d("Name: ", log);
-        }
+        }*/
 
     }
     private class GetRecords extends AsyncTask<Void, Void, Void> {
@@ -115,19 +97,23 @@ public class TakeTest extends AppCompatActivity{
         protected Void doInBackground(Void... voids) {
             try {
 
-                //ServiceHandler sh = new ServiceHandler();
-                //String jsonStr = sh.makeServiceCall(urlu, ServiceHandler.GET);
+                ServiceHandler sh = new ServiceHandler();
+                String url="http://192.168.5.100/chooza/API/GetAllQuestions";
+                String jsonStr = sh.makeServiceCall(url, ServiceHandler.GET);
+                System.out.println(jsonStr);
+                databaseHandler.deleteAllQuestions();
                 //MyJSON.saveData(TakeTest.this, jsonStr);
                 //saveToFile("Test", jsonStr );
                 //writeToFile("Test.txt", jsonStr);
-                JSONArray jr = new JSONArray(readFromFile(TakeTest.this, "Test.txt"));
+                //JSONArray jr = new JSONArray(readFromFile(TakeTest.this, "Test.txt"));
+                JSONArray jr = new JSONArray(jsonStr);
                 for (int i = 0; i<jr.length(); i++)
                 {
                     JSONObject jsonobject= (JSONObject) jr.get(i);
                     String id=jsonobject.optString("Id");
                     String statement=jsonobject.optString("Statement");
                     String type=jsonobject.optString("Type");
-                    //databaseHandler.addQuestion(new Question(id, statement, type));
+                    databaseHandler.addQuestion(new Question(id, statement, type));
                     //prepareAlbums(jsonobject.optString("Name"), jsonobject.optString("City"));
                 }
             } catch (JSONException e) {
@@ -140,9 +126,15 @@ public class TakeTest extends AppCompatActivity{
             super.onPostExecute(result);
             List<Question> questions = databaseHandler.getAllQuestions();
             final String[] array = new String[questions.size()];
+            final String[] questionType= new String[questions.size()];
+
             int index = 0;
             for (Question qu : questions) {
                 array[index]=qu.getStatement();
+                questionType[index]= qu.getType();
+                System.out.println(questionType[index]);
+                String log = "Id: " + qu.getQuestion_ID() + " ,Statement: " + qu.getStatement() + " ,Type: " + qu.getType();
+                System.out.println(log);
                 index++;
             }
             ArrayAdapter<String> adapter = new ArrayAdapter<String>
@@ -153,13 +145,45 @@ public class TakeTest extends AppCompatActivity{
                 @Override
                 public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                     // TODO Auto-generated method stub
+                    System.out.println(questionType[position]);
+                    if(questionType[position].equals("Realistic"))
+                        RealisticCount=RealisticCount+1;
+                    else if(questionType[position].equals("Investigative"))
+                        InvestigativeCount=InvestigativeCount+1;
+                    else if(questionType[position].equals("Artistic"))
+                        ArtisticCount=ArtisticCount+1;
+                    else if(questionType[position].equals("Social"))
+                        SocialCount=SocialCount+1;
+                    else if(questionType[position].equals("Enterprising"))
+                        EnterprisingCount=EnterprisingCount+1;
+                    else if(questionType[position].equals("Conventional"))
+                        ConventionalCount=ConventionalCount+1;
+                    System.out.println(RealisticCount);
+                    System.out.println(InvestigativeCount);
+                    System.out.println(ArtisticCount);
+                    System.out.println(SocialCount);
+                    System.out.println(EnterprisingCount);
+                    System.out.println(ConventionalCount);
 
+
+
+
+                    //array[listview.getCheckedItemPosition()]
                     sparseBooleanArray = listview.getCheckedItemPositions();
 
                     String ValueHolder = "" ;
 
                     int i = 0 ;
-
+                    /*List<Question> questions = databaseHandler.getAllQuestions();
+                    final String[] array = new String[questions.size()];
+                    int index = 0;
+                    while (i < sparseBooleanArray.size()) {
+                        for (Question qu : questions) {
+                            array[index] = qu.getStatement();
+                            if (sparseBooleanArray.valueAt(i)&& sparseBooleanArray.keyAt(i)==array[index])
+                            index++;
+                        }
+                    }*/
                     while (i < sparseBooleanArray.size()) {
 
                         if (sparseBooleanArray.valueAt(i)) {
@@ -170,6 +194,7 @@ public class TakeTest extends AppCompatActivity{
                         i++ ;
                     }
 
+
                     ValueHolder = ValueHolder.replaceAll("(,)*$", "");
 
                     Toast.makeText(TakeTest.this, "ListView Selected Values = " + ValueHolder, Toast.LENGTH_LONG).show();
@@ -179,6 +204,25 @@ public class TakeTest extends AppCompatActivity{
 
         }
 
+    }
+    public void displayResults(View view)
+    {
+        Button button= (Button)findViewById(R.id.buttonTest);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Pass Program Id here
+                //personalityTypeArray= {RealisticCount, InvestigativeCount, ArtisticCount, SocialCount, EnterprisingCount, ConventionalCount};
+                personalityTypeArray[0]=RealisticCount;
+                personalityTypeArray[1]=InvestigativeCount;
+                personalityTypeArray[2]=ArtisticCount;
+                personalityTypeArray[3]=SocialCount;
+                personalityTypeArray[4]=EnterprisingCount;
+                personalityTypeArray[5]=ConventionalCount;
+                Arrays.sort(personalityTypeArray);
+                System.out.println(personalityTypeArray[0]);
+            }
+        });
     }
     public static String readFromFile(Context context, String file) {
         try {

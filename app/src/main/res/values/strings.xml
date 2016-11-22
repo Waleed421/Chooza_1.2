@@ -5,4 +5,8 @@
     <string name="action_play_next">Play Next</string>
     <string name="backdrop_title">LOVE MUSIC</string>
     <string name="backdrop_subtitle">This season top 20 albums</string>
+    <string name="university_prompt">Select City</string>
+    <string name="program_prompt">Select Program</string>
+    <string name="hello_world">Hello world!</string>
+
 </resources>
