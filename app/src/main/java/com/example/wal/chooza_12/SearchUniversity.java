@@ -91,7 +91,7 @@ public class SearchUniversity extends AppCompatActivity {
         try {
             // Creating service handler class instance
             ServiceHandler sh = new ServiceHandler();
-            String url="http://192.168.0.106/Chooza/API/GetAllUniversities";
+            String url="http://172.20.103.38/Chooza/API/GetAllUniversities";
             //String jsonStr = (sh.makeServiceCall(url, ServiceHandler.GET));
             String jsonStr = (readFromFile(SearchUniversity.this , "uniJson.txt"));
             JSONArray jr = new JSONArray(jsonStr);
@@ -159,7 +159,7 @@ public class SearchUniversity extends AppCompatActivity {
         protected Void doInBackground(Void... voids) {
             // Creating service handler class instance
             ServiceHandler sh = new ServiceHandler();
-            String url="http://192.168.5.100/Chooza/API/GetAllUniversities";
+            String url="http://192.168.100.113/Chooza/API/GetAllUniversities";
             String jsonStr = (sh.makeServiceCall(url, ServiceHandler.GET));
 
             if (jsonStr != null) {

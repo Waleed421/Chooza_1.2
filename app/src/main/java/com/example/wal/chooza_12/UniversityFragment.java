@@ -1,5 +1,6 @@
 package com.example.wal.chooza_12;
 
+import android.app.Activity;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -50,7 +51,7 @@ public class UniversityFragment extends Fragment {
             try {
                 // Creating service handler class instance
                 ServiceHandler sh = new ServiceHandler();
-                String url="http://192.168.5.100/chooza/API/GetAllUniversities";
+                String url="http://172.20.103.38/chooza/API/GetAllUniversities";
                 String jsonStr = (sh.makeServiceCall(url, ServiceHandler.GET));
                 JSONArray jr = new JSONArray(jsonStr);
                 for (int i = 0; i<jr.length(); i++)
@@ -102,7 +103,7 @@ public class UniversityFragment extends Fragment {
         @Override
         protected void onPostExecute(Void aVoid) {
             super.onPostExecute(aVoid);
-            adapterUniList = new ArrayAdapter<String>(getActivity(),
+            adapterUniList = new ArrayAdapter<String>((Activity)getActivity(),
                     R.layout.spinner_layout, result);
             adapterUniList.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
             spUniversities.setAdapter(adapterUniList);

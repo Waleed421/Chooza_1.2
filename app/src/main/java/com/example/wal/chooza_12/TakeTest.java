@@ -1,6 +1,7 @@
 package com.example.wal.chooza_12;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
@@ -28,7 +29,6 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 
@@ -44,17 +44,21 @@ public class TakeTest extends AppCompatActivity{
     // Hashmap for ListView
     ArrayList<HashMap<String, String>> questions;
     private List<Question> questionList;
+    public ArrayList<String> ProgramsList= new ArrayList<>();
+    public ArrayAdapter<String> adapterProgramsList;
+
     ListView listview ;
     Context ctx;
     SparseBooleanArray sparseBooleanArray ;
     DrawerLayout mDrawerLayout;
     NavigationView mNavigationView;
-    private int RealisticCount;
-    private int InvestigativeCount;
-    private int ArtisticCount;
-    private int SocialCount;
-    private int EnterprisingCount;
-    private int ConventionalCount;
+    public String test="4";
+    public int RealisticCount;
+    public int InvestigativeCount;
+    public int ArtisticCount;
+    public int SocialCount;
+    public int EnterprisingCount;
+    public int ConventionalCount;
     private int[] personalityTypeArray= new int[6];
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -98,7 +102,7 @@ public class TakeTest extends AppCompatActivity{
             try {
 
                 ServiceHandler sh = new ServiceHandler();
-                String url="http://192.168.5.100/chooza/API/GetAllQuestions";
+                String url="http://172.20.103.38/chooza/API/GetAllQuestions";
                 String jsonStr = sh.makeServiceCall(url, ServiceHandler.GET);
                 System.out.println(jsonStr);
                 databaseHandler.deleteAllQuestions();
@@ -145,19 +149,38 @@ public class TakeTest extends AppCompatActivity{
                 @Override
                 public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                     // TODO Auto-generated method stub
+                    sparseBooleanArray = listview.getCheckedItemPositions();
                     System.out.println(questionType[position]);
-                    if(questionType[position].equals("Realistic"))
-                        RealisticCount=RealisticCount+1;
-                    else if(questionType[position].equals("Investigative"))
-                        InvestigativeCount=InvestigativeCount+1;
-                    else if(questionType[position].equals("Artistic"))
-                        ArtisticCount=ArtisticCount+1;
-                    else if(questionType[position].equals("Social"))
-                        SocialCount=SocialCount+1;
-                    else if(questionType[position].equals("Enterprising"))
-                        EnterprisingCount=EnterprisingCount+1;
-                    else if(questionType[position].equals("Conventional"))
-                        ConventionalCount=ConventionalCount+1;
+                    if(sparseBooleanArray.get(position)==true) {
+                        if (questionType[position].equals("Realistic"))
+                            RealisticCount = RealisticCount + 1;
+                        else if (questionType[position].equals("Investigative"))
+                            InvestigativeCount = InvestigativeCount + 1;
+                        else if (questionType[position].equals("Artistic"))
+                            ArtisticCount = ArtisticCount + 1;
+                        else if (questionType[position].equals("Social"))
+                            SocialCount = SocialCount + 1;
+                        else if (questionType[position].equals("Enterprising"))
+                            EnterprisingCount = EnterprisingCount + 1;
+                        else if (questionType[position].equals("Conventional"))
+                            ConventionalCount = ConventionalCount + 1;
+                    }
+                    else
+                    {
+                        if (questionType[position].equals("Realistic"))
+                            RealisticCount = RealisticCount - 1;
+                        else if (questionType[position].equals("Investigative"))
+                            InvestigativeCount = InvestigativeCount - 1;
+                        else if (questionType[position].equals("Artistic"))
+                            ArtisticCount = ArtisticCount - 1;
+                        else if (questionType[position].equals("Social"))
+                            SocialCount = SocialCount - 1;
+                        else if (questionType[position].equals("Enterprising"))
+                            EnterprisingCount = EnterprisingCount - 1;
+                        else if (questionType[position].equals("Conventional"))
+                            ConventionalCount = ConventionalCount - 1;
+                    }
+
                     System.out.println(RealisticCount);
                     System.out.println(InvestigativeCount);
                     System.out.println(ArtisticCount);
@@ -169,7 +192,7 @@ public class TakeTest extends AppCompatActivity{
 
 
                     //array[listview.getCheckedItemPosition()]
-                    sparseBooleanArray = listview.getCheckedItemPositions();
+
 
                     String ValueHolder = "" ;
 
@@ -211,19 +234,25 @@ public class TakeTest extends AppCompatActivity{
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Pass Program Id here
-                //personalityTypeArray= {RealisticCount, InvestigativeCount, ArtisticCount, SocialCount, EnterprisingCount, ConventionalCount};
-                personalityTypeArray[0]=RealisticCount;
-                personalityTypeArray[1]=InvestigativeCount;
-                personalityTypeArray[2]=ArtisticCount;
-                personalityTypeArray[3]=SocialCount;
-                personalityTypeArray[4]=EnterprisingCount;
-                personalityTypeArray[5]=ConventionalCount;
-                Arrays.sort(personalityTypeArray);
-                System.out.println(personalityTypeArray[0]);
+                String R=""+RealisticCount;
+                String I=""+ArtisticCount;
+                String A=""+ArtisticCount;
+                String S=""+SocialCount;
+                String E=""+EnterprisingCount;
+                String C=""+ConventionalCount;
+                Intent intent = new Intent(v.getContext(), DisplayResult.class);
+                intent.putExtra("RCount", R);
+                intent.putExtra("ICount", I);
+                intent.putExtra("ACount", A);
+                intent.putExtra("SCount", S);
+                intent.putExtra("ECount", E);
+                intent.putExtra("CCount", C);
+                startActivity(intent);
+
             }
         });
     }
+
     public static String readFromFile(Context context, String file) {
         try {
             //File f = new File(context.getFilesDir().getPath() + "/" + file);

@@ -22,6 +22,12 @@
         </activity>
         <activity android:name="com.example.wal.chooza_12.TakeTest" >
         </activity>
+        <activity android:name="com.example.wal.chooza_12.DisplayResult" >
+        </activity>
+        <activity android:name="com.example.wal.chooza_12.Offerings" >
+        </activity>
+        <activity android:name="com.example.wal.chooza_12.signup" >
+        </activity>
         <!-- Splash screen -->
         <activity
             android:name="com.example.wal.chooza_12.SplashScreen"

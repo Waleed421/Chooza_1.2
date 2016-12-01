@@ -13,10 +13,18 @@
 
         <activity
             android:name=".SearchUniversity" >
-
         </activity>
         <activity
             android:name=".TakeTest" >
+        </activity>
+        <activity
+            android:name=".DisplayResult" >
+        </activity>
+        <activity
+            android:name=".Offerings">
+        </activity>
+        <activity
+            android:name=".signup">
 
         </activity>
         <!-- Splash screen -->

@@ -134,6 +134,10 @@ public class MainActivity extends AppCompatActivity {
                 //Pass Program Id here
                 ProgramFragment pf= new ProgramFragment();
                 System.out.println(pf.selectedItemText);
+                String pname= pf.selectedItemText;
+                Intent intent = new Intent(v.getContext(), Offerings.class);
+                intent.putExtra("Pname", pname);
+                startActivity(intent);
             }
         });
     }

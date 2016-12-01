@@ -291,7 +291,7 @@ public class MyDBHandler extends SQLiteOpenHelper{
     }
 
     //Adding new Result
-    public  void addResult(Result result)
+   /* public  void addResult(Result result)
     {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
@@ -302,7 +302,7 @@ public class MyDBHandler extends SQLiteOpenHelper{
         db.insert(TAG_RESULT, null, values);
         db.close(); // Closing database connection
     }
-
+*/
     //Adding new Recommendation
     public  void addRecommendation(Recommendation recommendation)
     {

@@ -41,7 +41,7 @@ public class ProgramFragment extends Fragment {
             try {
                 // Creating service handler class instance
                 ServiceHandler sh = new ServiceHandler();
-                String url = "http://192.168.5.100/chooza/API/GetAllPrograms";
+                String url = "http://172.20.103.38/chooza/API/GetAllPrograms";
                 String jsonStr = (sh.makeServiceCall(url, ServiceHandler.GET));
                 JSONArray jr = new JSONArray(jsonStr);
                 for (int i = 0; i < jr.length(); i++) {

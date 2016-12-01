@@ -559,6 +559,12 @@
 
 
     </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="AppTheme.Button" parent="Widget.AppCompat.Button.Colored"/>
+    <style name="AppTheme.ButtonBorderless" parent="Widget.AppCompat.Button.Borderless.Colored">
+    <item name="colorButtonNormal">@color/colorPrimaryDark</item>
+    </style>
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
     <style name="Base.AlertDialog.AppCompat" parent="android:Widget">
         <item name="android:layout">@layout/abc_alert_dialog_material</item>
         <item name="listLayout">@layout/abc_select_dialog_material</item>

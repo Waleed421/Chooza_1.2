@@ -4,40 +4,38 @@ package com.example.wal.chooza_12;
  * Created by wal on 9/17/2016.
  */
 public class Result {
-    private int Result_ID;
-    private String Personality_Interest;
-    private int Test_ID;
-    private int Student_ID;
+    private String Name;
+    private String Education_Scope;
+    private String Employment_Scope;
 
-    public int getResult_ID() {
-        return Result_ID;
+
+    public Result(String name, String education_Scope, String employment_Scope) {
+        Name = name;
+        Education_Scope = education_Scope;
+        Employment_Scope = employment_Scope;
     }
 
-    public void setResult_ID(int result_ID) {
-        Result_ID = result_ID;
+    public String getName() {
+        return Name;
     }
 
-    public String getPersonality_Interest() {
-        return Personality_Interest;
+    public void setName(String name) {
+        Name = name;
     }
 
-    public void setPersonality_Interest(String personality_Interest) {
-        Personality_Interest = personality_Interest;
+    public String getEducation_Scope() {
+        return Education_Scope;
     }
 
-    public int getTest_ID() {
-        return Test_ID;
+    public void setEducation_Scope(String education_Scope) {
+        Education_Scope = education_Scope;
     }
 
-    public void setTest_ID(int test_ID) {
-        Test_ID = test_ID;
+    public String getEmployment_Scope() {
+        return Employment_Scope;
     }
 
-    public int getStudent_ID() {
-        return Student_ID;
-    }
-
-    public void setStudent_ID(int student_ID) {
-        Student_ID = student_ID;
+    public void setEmployment_Scope(String employment_Scope) {
+        Employment_Scope = employment_Scope;
     }
 }

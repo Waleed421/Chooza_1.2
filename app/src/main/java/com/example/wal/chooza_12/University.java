@@ -4,36 +4,27 @@ package com.example.wal.chooza_12;
  * Created by wal on 9/17/2016.
  */
 public class University {
-    //private int University_ID;
+
     private String Name;
-
-
-
     private int Thumbnail;
-    //private String City;
-    //private String Introduction;
-    //private String ImageData;
-    //private String Address;
-    //private String Website;
-    //private String Sector;
+    private String City;
+    private String Website;
+    private String Sector;
+    public String HSSC_Criteria;
+    public String SSC_Criteria;
+    public String Duration;
 
-
-
-    public University(String Name, int Thumbnail)
-    {
-
-        this.Name= Name;
-        this.Thumbnail= Thumbnail;
+    public University(String name, int thumbnail, String city, String website, String sector, String HSSC_Criteria, String SSC_Criteria, String duration) {
+        Name = name;
+        Thumbnail = thumbnail;
+        City = city;
+        Website = website;
+        Sector = sector;
+        this.HSSC_Criteria = HSSC_Criteria;
+        this.SSC_Criteria = SSC_Criteria;
+        Duration = duration;
     }
 
-
-   /* public int getUniversity_ID() {
-        return University_ID;
-    }
-
-    public void setUniversity_ID(int university_ID) {
-        University_ID = university_ID;
-    }*/
 
     public String getName() {
         return Name;
@@ -49,36 +40,13 @@ public class University {
     public void setThumbnail(int thumbnail) {
         Thumbnail = thumbnail;
     }
-    /*public String getCity() {
+
+    public String getCity() {
         return City;
     }
 
     public void setCity(String city) {
         City = city;
-    }
-
-    public String getIntroduction() {
-        return Introduction;
-    }
-
-    public void setIntroduction(String introduction) {
-        Introduction = introduction;
-    }
-
-    public String getImageData() {
-        return ImageData;
-    }
-
-    public void setImageData(String imageData) {
-        ImageData = imageData;
-    }
-
-    public String getAddress() {
-        return Address;
-    }
-
-    public void setAddress(String address) {
-        Address = address;
     }
 
     public String getWebsite() {
@@ -96,5 +64,28 @@ public class University {
     public void setSector(String sector) {
         Sector = sector;
     }
-*/
+
+    public String getHSSC_Criteria() {
+        return HSSC_Criteria;
+    }
+
+    public void setHSSC_Criteria(String HSSC_Criteria) {
+        this.HSSC_Criteria = HSSC_Criteria;
+    }
+
+    public String getSSC_Criteria() {
+        return SSC_Criteria;
+    }
+
+    public void setSSC_Criteria(String SSC_Criteria) {
+        this.SSC_Criteria = SSC_Criteria;
+    }
+
+    public String getDuration() {
+        return Duration;
+    }
+
+    public void setDuration(String duration) {
+        Duration = duration;
+    }
 }
