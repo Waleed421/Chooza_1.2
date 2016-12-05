@@ -12,6 +12,15 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\Users\Waleed-PC\.gradle\caches\modules-2\files-2.1\com.jakewharton\butterknife\6.1.0\63735f48b82bcd24cdd33821342428252eb1ca5a\butterknife-6.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="63735f48b82bcd24cdd33821342428252eb1ca5a">
+        <dex dex="C:\Users\Waleed-PC\Documents\ChoozaApp-20161016T182023Z\ChoozaApp\Chooza_1.2\app\build\intermediates\transforms\dex\debug\folders\1000\10\butterknife-6.1.0_19f82ed173635144a311c6e17d35df72225b6460\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\Waleed-PC\.gradle\caches\modules-2\files-2.1\com.github.bumptech.glide\glide\3.7.0\9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4\glide-3.7.0.jar"
         jumboMode="true"
         optimize="true"
@@ -39,11 +48,20 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\Users\Waleed-PC\Documents\ChoozaApp-20161016T182023Z\ChoozaApp\Chooza_1.2\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\24.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="4add8aa95c9f4e9a2ad64b7e2bf08e97e28955c1">
+        <dex dex="C:\Users\Waleed-PC\Documents\ChoozaApp-20161016T182023Z\ChoozaApp\Chooza_1.2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-cardview-v7-24.1.1_0992ad78c5e11a2c9328e3887252b002e2509414\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\Waleed-PC\Documents\ChoozaApp-20161016T182023Z\ChoozaApp\Chooza_1.2\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.1"
-        sha1="914a33dc8175e100e7cdbf10b40a9a0d0657b9d0">
+        sha1="a3e0541d3a6c6aa53e3fc29244bbde5a3f4f0f64">
         <dex dex="C:\Users\Waleed-PC\Documents\ChoozaApp-20161016T182023Z\ChoozaApp\Chooza_1.2\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_d352ff3b94eece5dbe52fcb689148eaf2aafc69b\classes.dex" />
     </item>
     <item
@@ -54,6 +72,24 @@
         revision="24.0.1"
         sha1="787871951412550519b0222aba3c9df4cea49875">
         <dex dex="C:\Users\Waleed-PC\Documents\ChoozaApp-20161016T182023Z\ChoozaApp\Chooza_1.2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-24.1.1_fb0e2b6dcdde422ced06326bc0db5fe7ad060da3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Waleed-PC\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\24.1.1\support-annotations-24.1.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="3af19f153122737b372622fa6c81dd11a1c6b999">
+        <dex dex="C:\Users\Waleed-PC\Documents\ChoozaApp-20161016T182023Z\ChoozaApp\Chooza_1.2\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-24.1.1_f80292e06332efc20a6f47b8889ce70bc6670630\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Waleed-PC\Documents\ChoozaApp-20161016T182023Z\ChoozaApp\Chooza_1.2\app\build\intermediates\exploded-aar\com.android.support\design\24.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="e195bd694d5389acfba27ff4fdfa64c4c65b2c05">
+        <dex dex="C:\Users\Waleed-PC\Documents\ChoozaApp-20161016T182023Z\ChoozaApp\Chooza_1.2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-24.1.1_6e92ff1b3bd7fab0b0cc2ad9ba3729ed4242e0b4\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -84,47 +120,11 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Waleed-PC\.gradle\caches\modules-2\files-2.1\com.jakewharton\butterknife\6.1.0\63735f48b82bcd24cdd33821342428252eb1ca5a\butterknife-6.1.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="63735f48b82bcd24cdd33821342428252eb1ca5a">
-        <dex dex="C:\Users\Waleed-PC\Documents\ChoozaApp-20161016T182023Z\ChoozaApp\Chooza_1.2\app\build\intermediates\transforms\dex\debug\folders\1000\10\butterknife-6.1.0_19f82ed173635144a311c6e17d35df72225b6460\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Waleed-PC\Documents\ChoozaApp-20161016T182023Z\ChoozaApp\Chooza_1.2\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\24.1.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="4add8aa95c9f4e9a2ad64b7e2bf08e97e28955c1">
-        <dex dex="C:\Users\Waleed-PC\Documents\ChoozaApp-20161016T182023Z\ChoozaApp\Chooza_1.2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-cardview-v7-24.1.1_0992ad78c5e11a2c9328e3887252b002e2509414\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Waleed-PC\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\24.1.1\support-annotations-24.1.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="3af19f153122737b372622fa6c81dd11a1c6b999">
-        <dex dex="C:\Users\Waleed-PC\Documents\ChoozaApp-20161016T182023Z\ChoozaApp\Chooza_1.2\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-24.1.1_f80292e06332efc20a6f47b8889ce70bc6670630\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Waleed-PC\Documents\ChoozaApp-20161016T182023Z\ChoozaApp\Chooza_1.2\app\build\intermediates\exploded-aar\com.android.support\design\24.1.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="e195bd694d5389acfba27ff4fdfa64c4c65b2c05">
-        <dex dex="C:\Users\Waleed-PC\Documents\ChoozaApp-20161016T182023Z\ChoozaApp\Chooza_1.2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-24.1.1_6e92ff1b3bd7fab0b0cc2ad9ba3729ed4242e0b4\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\Users\Waleed-PC\Documents\ChoozaApp-20161016T182023Z\ChoozaApp\Chooza_1.2\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.1"
-        sha1="a64ffb367cdec6bc9a710650bb39d8e7ccacc481">
+        sha1="b1316b9f4820fb434af5c6958c47c0797668e280">
         <dex dex="C:\Users\Waleed-PC\Documents\ChoozaApp-20161016T182023Z\ChoozaApp\Chooza_1.2\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_e8abf3955f13bc67ed5ee2b58d643271e9752310\classes.dex" />
     </item>
 

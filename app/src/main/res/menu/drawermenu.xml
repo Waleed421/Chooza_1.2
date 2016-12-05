@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/group_main">
     <item android:title="Home"
         android:id="@+id/home"
         android:icon="@drawable/home"
@@ -17,7 +18,7 @@
     <item android:title="Find Programs"
         android:id="@+id/programs"
         android:icon="@drawable/ic_programs"/>
-
+</group>
  <!--   <item android:title="Others">
         <menu>
             <item
@@ -37,5 +38,10 @@
             android:icon="@drawable/help"/>
     </group>
 
+    <group android:id="@+id/group_logout">
 
+        <item android:title="Logout"
+            android:id="@+id/logout"
+            android:icon="@drawable/logout"/>
+    </group>
 </menu>

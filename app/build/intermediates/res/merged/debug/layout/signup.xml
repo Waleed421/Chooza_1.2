@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -70,12 +74,45 @@
             android:singleLine="true" />
 
     </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilusername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tilname"
+            android:padding="2dp">
 
+            <AutoCompleteTextView
+                android:id="@+id/txtusername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter User Name"
+                android:inputType="text"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tilusername"
+            android:padding="2dp">
+
+            <AutoCompleteTextView
+                android:id="@+id/txtpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Password"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+        </android.support.design.widget.TextInputLayout>
     <android.support.design.widget.TextInputLayout
         android:id="@+id/tilemail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/tilname"
+        android:layout_below="@+id/tilpassword"
         android:padding="2dp">
 
         <AutoCompleteTextView
@@ -88,12 +125,74 @@
             android:singleLine="true" />
 
     </android.support.design.widget.TextInputLayout>
+        <RadioGroup
+            android:id="@+id/radioGrpGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tilemail"
+            android:orientation="horizontal"
+            android:padding="2dp"
+            >
+            <RadioButton
+                android:id="@+id/radioM"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:checked="true"
+                android:layout_weight="0.7"
+                android:textSize="20dp"
+                android:text="Male"
+                />
+            <RadioButton
+                android:id="@+id/radioF"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:checked="false"
+                android:layout_weight="1"
+                android:textSize="20dp"
+                android:text="Female"
+                />
+        </RadioGroup>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tildob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radioGrpGender"
+            android:padding="2dp">
 
+            <AutoCompleteTextView
+                android:id="@+id/txtdob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Your DOB(YYYY-MM-DD)"
+                android:inputType="text"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilcity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tildob"
+            android:padding="2dp">
+
+            <AutoCompleteTextView
+                android:id="@+id/txtcity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Your City"
+                android:inputType="text"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+        </android.support.design.widget.TextInputLayout>
     <android.support.design.widget.TextInputLayout
         android:id="@+id/tilmobileno"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/tilemail"
+        android:layout_below="@+id/tilcity"
         android:padding="2dp">
 
         <AutoCompleteTextView
@@ -125,6 +224,16 @@
             android:background="#fff"
             android:theme="@style/AppTheme.ButtonBorderless"
             android:text="Clear" />
+        <TextView android:id="@+id/link_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnClear"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="10dp"
+            android:text="Already a member? Login"
+            android:gravity="center"
+            android:textSize="16dip"
+            android:onClick="login"/>
     </RelativeLayout>
     <android.support.design.widget.CoordinatorLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
@@ -136,3 +245,4 @@
         android:layout_alignParentBottom="true"
         ></android.support.design.widget.CoordinatorLayout>
 </RelativeLayout>
+</ScrollView>

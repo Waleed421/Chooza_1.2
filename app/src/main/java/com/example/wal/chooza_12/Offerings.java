@@ -166,7 +166,7 @@ public class Offerings extends AppCompatActivity{
             universityList = new ArrayList<>();
             try {
                 ServiceHandler sh = new ServiceHandler();
-                String url = "http://172.20.103.38/chooza/API/GetAllOfferingUniversities?";
+                String url = "http://192.168.100.138/chooza1/API/GetAllOfferingUniversities?";
                 String selectedProgramUrl= url+"Pname="+Pname;
                 String jsonStr = sh.makeServiceCall(selectedProgramUrl, ServiceHandler.GET);
                 JSONArray jr = new JSONArray(jsonStr);

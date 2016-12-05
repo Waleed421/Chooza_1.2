@@ -55,10 +55,7 @@ public class SearchUniversity extends AppCompatActivity {
     private static final String TAG_UNIVERSITY = "University";
     private static final String TAG_PROGRAM = "Program";
     private static final String TAG_PROGRAM_UNIVERSITY = "Program_University";
-    private static final String TAG_FEESTRUCTURE = "Fee_Structure";
-    private static final String TAG_ASPNET_ROLES = "aspnet_Roles";
-    private static final String TAG_ASPNET_USERS = "aspnet_Users";
-    private static final String TAG_ASPNET_USERSINROLES = "aspnet_UsersInRoles";
+
     private MyDBHandler databaseHandler;
     // Hashmap for ListView
     ArrayList<HashMap<String, String>> universities;
@@ -91,7 +88,7 @@ public class SearchUniversity extends AppCompatActivity {
         try {
             // Creating service handler class instance
             ServiceHandler sh = new ServiceHandler();
-            String url="http://172.20.103.38/Chooza/API/GetAllUniversities";
+            String url="http://192.168.100.138/Chooza1/API/GetAllUniversities";
             //String jsonStr = (sh.makeServiceCall(url, ServiceHandler.GET));
             String jsonStr = (readFromFile(SearchUniversity.this , "uniJson.txt"));
             JSONArray jr = new JSONArray(jsonStr);

@@ -37,10 +37,8 @@ public class MainActivity extends AppCompatActivity {
     private static final String TAG_UNIVERSITY = "University";
     private static final String TAG_PROGRAM = "Program";
     private static final String TAG_PROGRAM_UNIVERSITY = "Program_University";
-    private static final String TAG_FEESTRUCTURE = "Fee_Structure";
-    private static final String TAG_ASPNET_ROLES = "aspnet_Roles";
-    private static final String TAG_ASPNET_USERS = "aspnet_Users";
-    private static final String TAG_ASPNET_USERSINROLES = "aspnet_UsersInRoles";
+
+
     private MyDBHandler databaseHandler;
 
     // Hashmap for ListView
@@ -96,8 +94,16 @@ public class MainActivity extends AppCompatActivity {
                     FragmentTransaction xfragmentTransaction = mFragmentManager.beginTransaction();
                     xfragmentTransaction.replace(R.id.containerView,new UniversityFragment()).commit();
                 }
-
+                if (menuItem.getItemId() == R.id.logout) {
+                   this.Logout();
+                }
                 return false;
+            }
+
+            private void Logout() {
+                databaseHandler.deleteAllStudents();
+                Intent intent = new Intent(MainActivity.this, login.class);
+                startActivity(intent);
             }
 
         });

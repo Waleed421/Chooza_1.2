@@ -4,23 +4,31 @@ package com.example.wal.chooza_12;
  * Created by wal on 9/17/2016.
  */
 public class Student {
-    private int Student_ID;
     private String Name;
     private String Username;
     private String Password;
     private String Email_ID;
-    private String Picture;
     private String Gender;
     private String DOB;
     private String City;
     private String Phone;
 
-    public int getStudent_ID() {
-        return Student_ID;
+    public Student(String name, String username, String password, String email_ID, String gender, String DOB, String city, String phone) {
+        Name = name;
+        Username = username;
+        Password = password;
+        Email_ID = email_ID;
+        Gender = gender;
+        this.DOB = DOB;
+        City = city;
+        Phone = phone;
     }
+public Student(){}
 
-    public void setStudent_ID(int student_ID) {
-        Student_ID = student_ID;
+    public Student(String name, String username, String password) {
+        Name = name;
+        Username = username;
+        Password = password;
     }
 
     public String getName() {
@@ -55,13 +63,6 @@ public class Student {
         Email_ID = email_ID;
     }
 
-    public String getPicture() {
-        return Picture;
-    }
-
-    public void setPicture(String picture) {
-        Picture = picture;
-    }
 
     public String getGender() {
         return Gender;

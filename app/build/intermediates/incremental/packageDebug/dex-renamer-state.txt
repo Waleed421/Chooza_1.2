@@ -1,4 +1,4 @@
-#Mon Nov 28 15:29:50 PKT 2016
+#Fri Dec 02 23:13:36 PKT 2016
 base.0=C\:\\Users\\Waleed-PC\\Documents\\ChoozaApp-20161016T182023Z\\ChoozaApp\\Chooza_1.2\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_e8abf3955f13bc67ed5ee2b58d643271e9752310
 renamed.1=classes2.dex
 renamed.0=classes.dex

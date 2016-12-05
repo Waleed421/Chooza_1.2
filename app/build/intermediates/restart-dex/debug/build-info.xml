@@ -5,29 +5,29 @@
     density="xhdpi"
     format="8"
     plugin-version="2.2.2"
-    timestamp="349935707346802"
+    timestamp="723416269450988"
     token="2807759074756553779"
     verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="679" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="19" />
     <task
         name="verifier"
-        duration="0" />
+        duration="3" />
 
     <artifact
         location="C:\Users\Waleed-PC\Documents\ChoozaApp-20161016T182023Z\ChoozaApp\Chooza_1.2\app\build\outputs\apk\app-debug.apk"
         type="MAIN" />
 
     <build
-        timestamp="349935707346802"
+        timestamp="723416269450988"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="C:\Users\Waleed-PC\Documents\ChoozaApp-20161016T182023Z\ChoozaApp\Chooza_1.2\app\build\outputs\apk\app-debug.apk"

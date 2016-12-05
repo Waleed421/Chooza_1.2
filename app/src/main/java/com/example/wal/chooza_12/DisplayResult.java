@@ -65,7 +65,7 @@ public class DisplayResult extends AppCompatActivity{
             results= new ArrayList<>();
             try {
                 ServiceHandler sh = new ServiceHandler();
-                String url = "http://192.168.100.128/chooza/API/GetAllResultPrograms?";
+                String url = "http://192.168.100.138/chooza1/API/GetAllResultPrograms?";
                 String testResultUrl= url+"R="+RealisticCount+"&I="+InvestigativeCount+"&A="+ArtisticCount+"&S="+SocialCount+"&E="+EnterprisingCount+"&C="+ConventionalCount;
                 String jsonStr = sh.makeServiceCall(testResultUrl, ServiceHandler.GET);
                 JSONArray jr = new JSONArray(jsonStr);

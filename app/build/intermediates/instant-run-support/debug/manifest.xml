@@ -9,6 +9,9 @@
         android:targetSdkVersion="24" />
     <!-- Internet permission -->
     <uses-permission android:name="android.permission.INTERNET" />
+    <!-- Vibrator Permission -->
+    <uses-permission android:name="android.permission.VIBRATE" >
+    </uses-permission>
 
     <application
         android:name="com.android.tools.fd.runtime.BootstrapApplication"
@@ -27,6 +30,8 @@
         <activity android:name="com.example.wal.chooza_12.Offerings" >
         </activity>
         <activity android:name="com.example.wal.chooza_12.signup" >
+        </activity>
+        <activity android:name="com.example.wal.chooza_12.login" >
         </activity>
         <!-- Splash screen -->
         <activity

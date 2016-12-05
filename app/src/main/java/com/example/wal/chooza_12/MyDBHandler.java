@@ -81,25 +81,14 @@ public class MyDBHandler extends SQLiteOpenHelper{
     private static final String COLUMN_SSCCRITERIA = "SSC_Criteria";
     private static final String COLUMN_REFERENCE = "Reference";
 
-    //Fee_Structure Table
-    private static final String TAG_FEESTRUCTURE = "Fee_Structure";
-    private static final String COLUMN_FEEID = "Fee_ID";
-    private static final String COLUMN_FIRSTSEMESTERFEE = "First_Semester_Fee";
-    private static final String COLUMN_SECONDONWARDSFEE = "Second_Onwards_Fee";
 
-    //aspnet_Roles Table
-    private static final String TAG_ASPNET_ROLES = "aspnet_Roles";
-    private static final String COLUMN_APPLICATIONID = "ApplicationId";
-    private static final String COLUMN_ROLEID = "RoleId";
-    private static final String COLUMN_ROLENAME = "RoleName";
 
-    //aspnet_Users Table
-    private static final String TAG_ASPNET_USERS = "aspnet_Users";
-    private static final String COLUMN_USERID = "UserId";
+
+
+
     private static final String COLUMN_USERNAME = "UserName";
 
-    //aspnet_UsersInRoles Table
-    private static final String TAG_ASPNET_USERSINROLES = "aspnet_UsersInRoles";
+
 
     private SQLiteDatabase database;
 
@@ -113,6 +102,10 @@ public class MyDBHandler extends SQLiteOpenHelper{
         String CREATE_QUESTION_TABLE = "CREATE TABLE " + TAG_QUESTION + "("
                 + COLUMN_QUESTIONID + " TEXT," + COLUMN_STATEMENT + " TEXT,"
                 + COLUMN_TYPE + " TEXT" + ")";
+        String CREATE_STUDENT_TABLE = "CREATE TABLE " + TAG_STUDENT + "("
+                + COLUMN_NAME + " TEXT," + COLUMN_STUDENTUSERNAME + " TEXT,"
+                + COLUMN_PASSWORD + " TEXT" + ")";
+        db.execSQL(CREATE_STUDENT_TABLE);
         db.execSQL(CREATE_QUESTION_TABLE);
     }
 
@@ -182,44 +175,61 @@ public class MyDBHandler extends SQLiteOpenHelper{
         db.insert(TAG_PROGRAM, null, values);
         db.close(); // Closing database connection
     }
-    // Adding new program_university
-    public void addProgramUniversity(Program_University programUniversity) {
-        SQLiteDatabase db = this.getWritableDatabase();
 
-        ContentValues values = new ContentValues();
-        values.put(COLUMN_PROGRAMUNIVERSITYID, programUniversity.getProgram_Uni_ID());
-        values.put(COLUMN_PROGRAMID, programUniversity.getProgram_ID());
-        values.put(COLUMN_UNIVERSITYID, programUniversity.getUniversity_ID());
-        values.put(COLUMN_FEEID, programUniversity.getFee_ID());
-        values.put(COLUMN_HSSCCRITERIA, programUniversity.getHSSC_Criteria());
-        values.put(COLUMN_SSCCRITERIA, programUniversity.getSSC_Criteria());
-        values.put(COLUMN_REFERENCE, programUniversity.getReference());
-
-        db.insert(TAG_PROGRAMUNIVERSITY, null, values);
-        db.close(); // Closing database connection
-    }
 
     //Adding new Student
     public  void addStudent(Student student)
     {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
-        values.put(COLUMN_STUDENTID, student.getStudent_ID());
         values.put(COLUMN_NAME, student.getName());
         values.put(COLUMN_USERNAME, student.getUsername());
         values.put(COLUMN_PASSWORD, student.getPassword());
-        values.put(COLUMN_EMAILID, student.getEmail_ID());
-        values.put(COLUMN_PICTURE, student.getPicture());
-        values.put(COLUMN_GENDER, student.getGender());
-        values.put(COLUMN_DOB, student.getDOB());
-        values.put(COLUMN_CITY, student.getCity());
-        values.put(COLUMN_PHONE, student.getPhone());
+        //values.put(COLUMN_EMAILID, student.getEmail_ID());
+        //values.put(COLUMN_GENDER, student.getGender());
+        //values.put(COLUMN_DOB, student.getDOB());
+        //values.put(COLUMN_CITY, student.getCity());
+        //values.put(COLUMN_PHONE, student.getPhone());
 
 
         db.insert(TAG_STUDENT, null, values);
         db.close(); // Closing database connection
     }
+    // Getting All Students
+    public List<Student> getAllStudents() {
 
+        List<Student> studentList = new ArrayList<Student>();
+        // Select All Query
+        String selectQuery = "SELECT  * FROM " + TAG_STUDENT;
+
+        SQLiteDatabase db = this.getWritableDatabase();
+        db.isOpen();
+        Cursor cursor = db.rawQuery(selectQuery, null);
+
+        // looping through all rows and adding to list
+        if (cursor.moveToFirst()) {
+            do {
+                Student student = new Student();
+                student.setName((cursor.getString(0)));
+                student.setUsername(cursor.getString(1));
+                student.setPassword(cursor.getString(2));
+                // Adding question to list
+                studentList.add(student);
+            } while (cursor.moveToNext());
+        }
+
+        // return question list
+        return studentList;
+    }
+    //Deleting all students
+    public void deleteAllStudents()
+    {
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues values = new ContentValues();
+        String deleteQuery = "DELETE  FROM " + TAG_STUDENT;
+        db.isOpen();
+        db.execSQL(deleteQuery);
+    }
     //Adding new Test
     public  void addTest(Test test)
     {

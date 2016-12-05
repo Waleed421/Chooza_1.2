@@ -102,7 +102,7 @@ public class TakeTest extends AppCompatActivity{
             try {
 
                 ServiceHandler sh = new ServiceHandler();
-                String url="http://172.20.103.38/chooza/API/GetAllQuestions";
+                String url="http://192.168.100.138/chooza1/API/GetAllQuestions";
                 String jsonStr = sh.makeServiceCall(url, ServiceHandler.GET);
                 System.out.println(jsonStr);
                 databaseHandler.deleteAllQuestions();
@@ -220,7 +220,7 @@ public class TakeTest extends AppCompatActivity{
 
                     ValueHolder = ValueHolder.replaceAll("(,)*$", "");
 
-                    Toast.makeText(TakeTest.this, "ListView Selected Values = " + ValueHolder, Toast.LENGTH_LONG).show();
+                    //Toast.makeText(TakeTest.this, "ListView Selected Values = " + ValueHolder, Toast.LENGTH_LONG).show();
 
                 }
             });
