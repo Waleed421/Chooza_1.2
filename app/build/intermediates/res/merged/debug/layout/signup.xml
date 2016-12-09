@@ -211,7 +211,7 @@
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:layout_below="@+id/tilmobileno"
-        android:textColor="#fff"
+        android:textColor="@color/black"
         android:theme="@style/AppTheme.Button"
         android:text="Sign Up" />
 
@@ -224,6 +224,7 @@
             android:background="#fff"
             android:theme="@style/AppTheme.ButtonBorderless"
             android:text="Clear" />
+
         <TextView android:id="@+id/link_login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -243,6 +244,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        ></android.support.design.widget.CoordinatorLayout>
+        >
+
+    </android.support.design.widget.CoordinatorLayout>
 </RelativeLayout>
 </ScrollView>

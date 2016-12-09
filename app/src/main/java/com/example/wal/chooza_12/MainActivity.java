@@ -73,6 +73,7 @@ public class MainActivity extends AppCompatActivity {
         mFragmentManager = getSupportFragmentManager();
         mFragmentTransaction = mFragmentManager.beginTransaction();
         mFragmentTransaction.replace(R.id.containerView,new TabFragment()).commit();
+
         /**
          * Setup click events on the Navigation View Items.
          */
@@ -93,6 +94,10 @@ public class MainActivity extends AppCompatActivity {
                 if (menuItem.getItemId() == R.id.university) {
                     FragmentTransaction xfragmentTransaction = mFragmentManager.beginTransaction();
                     xfragmentTransaction.replace(R.id.containerView,new UniversityFragment()).commit();
+                }
+                if (menuItem.getItemId() == R.id.programs) {
+                    FragmentTransaction xfragmentTransaction = mFragmentManager.beginTransaction();
+                    xfragmentTransaction.replace(R.id.containerView,new ProgramFragment()).commit();
                 }
                 if (menuItem.getItemId() == R.id.logout) {
                    this.Logout();

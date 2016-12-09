@@ -33,6 +33,12 @@ public class ProgramFragment extends Fragment {
         spPrograms = (Spinner)v.findViewById(R.id.spPrograms);
         //if(spPrograms == null && spPrograms.getSelectedItem() ==null )
         new GetRecords().execute();
+        if(ProgramsList!=null) {
+            adapterProgramsList = new ArrayAdapter<String>(getActivity(),
+                    R.layout.spinner_layout, ProgramsList);
+            adapterProgramsList.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
+            spPrograms.setAdapter(adapterProgramsList);
+        }
         return v;
     }
     private class GetRecords extends AsyncTask<Void, Void, Void> {
@@ -41,7 +47,7 @@ public class ProgramFragment extends Fragment {
             try {
                 // Creating service handler class instance
                 ServiceHandler sh = new ServiceHandler();
-                String url = "http://192.168.100.138/chooza1/API/GetAllPrograms";
+                String url = "http://192.168.43.73/chooza1/API/GetAllPrograms";
                 String jsonStr = (sh.makeServiceCall(url, ServiceHandler.GET));
                 JSONArray jr = new JSONArray(jsonStr);
                 for (int i = 0; i < jr.length(); i++) {

@@ -2,12 +2,12 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/back_textured">
+    android:background="@color/ivory">
 
     <FrameLayout
         android:layout_width="350dp"
-        android:layout_height="175dp"
-        android:layout_marginBottom="50dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="150dp"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
         android:background="#95000000"
@@ -25,8 +25,16 @@
             android:text="Programs offered in different universities of Pakistan"
             android:layout_centerVertical="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="10dp"/> />
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"/>
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/ivory"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
         <Spinner
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -36,8 +44,8 @@
             android:prompt="@string/program_prompt"
             android:layout_gravity="center"
             style="@android:style/Widget.Holo.Light.Spinner">
-
         </Spinner>
+        </FrameLayout>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

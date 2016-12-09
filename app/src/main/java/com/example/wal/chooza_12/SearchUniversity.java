@@ -36,11 +36,12 @@ public class SearchUniversity extends AppCompatActivity {
 
     private RecyclerView recyclerView;
     private AlbumsAdapter adapter;
-    private List<Album> albumList;
     private List<University> universityList;
     private static String SelectedCity;
-
-
+    public String[] nameList;
+    public String[] cityList;
+    public String[] websiteList;
+    public String[] sectorList;
     //url
     //private String url = "http://project-demos.com/video/api/web/v1/products?lang=2&expand=cookbyweight,cookbythickness,productnames,cuts,cutnames,productlanguages";
     //private String url="http://192.168.0.137/chooza/api/UniversityValues/GetAllUniversities";
@@ -73,8 +74,8 @@ public class SearchUniversity extends AppCompatActivity {
 
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
 
-        albumList = new ArrayList<>();
-        adapter = new AlbumsAdapter(this, albumList);
+        universityList = new ArrayList<>();
+        adapter = new AlbumsAdapter(this, universityList);
 
 
 
@@ -83,12 +84,13 @@ public class SearchUniversity extends AppCompatActivity {
         recyclerView.addItemDecoration(new GridSpacingItemDecoration(2, dpToPx(10), true));
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setAdapter(adapter);
-        //new GetRecords().execute();
+        AsyncTask<Void, Void, Void> myTask = new SearchUniversity.GetRecords(this);
+        myTask.execute();
 
-        try {
+        /*try {
             // Creating service handler class instance
             ServiceHandler sh = new ServiceHandler();
-            String url="http://192.168.100.138/Chooza1/API/GetAllUniversities";
+            String url="http://192.168.100.120/Chooza1/API/GetAllUniversities";
             //String jsonStr = (sh.makeServiceCall(url, ServiceHandler.GET));
             String jsonStr = (readFromFile(SearchUniversity.this , "uniJson.txt"));
             JSONArray jr = new JSONArray(jsonStr);
@@ -106,7 +108,7 @@ public class SearchUniversity extends AppCompatActivity {
         } catch (JSONException e) {
             e.printStackTrace();
         }
-
+*/
 
         try {
             Glide.with(this).load(R.drawable.banner).into((ImageView) findViewById(R.id.backdrop));
@@ -148,29 +150,43 @@ public class SearchUniversity extends AppCompatActivity {
     }
 
     private class GetRecords extends AsyncTask<Void, Void, Void> {
+        private Context mContext;
+        public GetRecords(Context context) {
+            this.mContext= context;
+        }
+
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
         }
         @Override
         protected Void doInBackground(Void... voids) {
+            universityList = new ArrayList<>();
             // Creating service handler class instance
             ServiceHandler sh = new ServiceHandler();
-            String url="http://192.168.100.113/Chooza/API/GetAllUniversities";
+            String url="http://192.168.43.73/Chooza1/API/GetAllUniversities";
             String jsonStr = (sh.makeServiceCall(url, ServiceHandler.GET));
 
             if (jsonStr != null) {
                 try {
 
                     JSONArray jr = new JSONArray(jsonStr);
+                    nameList=new String[jr.length()];
+                    cityList=new String[jr.length()];
+                    sectorList=new String[jr.length()];
+                    websiteList=new String[jr.length()];
+
                     for (int i = 0; i < jr.length(); i++) {
                         JSONObject jsonobject = jr.getJSONObject(i);
-                        String name = jsonobject.getString("Name");
-                        String city = jsonobject.getString("City");
-                        String website = jsonobject.getString("Website");
-                        System.out.println(name);
-                        prepareAlbums(name, city, website);
-                        //prepareAlbums(jsonobject.optString("Name"), jsonobject.optString("City"), jsonobject.optString("Website"));
+                        nameList[i] = jsonobject.getString("Name");
+                        cityList[i] = jsonobject.getString("City");
+                        websiteList[i] = jsonobject.getString("Website");
+                        sectorList[i] = jsonobject.getString("Sector");
+
+                        University u= new University(nameList[i], cityList[i], websiteList[i], sectorList[i], R.drawable.ist);
+
+                        if(cityList[i].equals(SelectedCity))
+                        universityList.add(u);
                     }
                 } catch (JSONException e) {
                     e.printStackTrace();
@@ -178,86 +194,17 @@ public class SearchUniversity extends AppCompatActivity {
             } else {
                 Log.e("ServiceHandler", "Couldn't get any data from the url");
             }
-            /*try {
-            JSONArray jr = new JSONArray(readFromFile(SearchUniversity.this , "Json.txt"));
-            for (int i = 0; i<10; i++)
-            {
-                JSONObject jsonobject= (JSONObject) jr.get(i);
-                //System.out.println(jsonobject.optString("Id"));
-                System.out.println(jsonobject.optString("Name"));
-                //prepareAlbums(jsonobject.optString("Name"), jsonobject.optString("City"));
-            }
-            //JSONObject jj = new JSONObject();
-            //jj = (JSONObject) jj.get("Name");
-            //System.out.println(jj.toString());
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
-*/
+
             return null;
         }
 
         protected void onPostExecute(Void result) {
+            adapter.notifyDataSetChanged();
+            adapter = new AlbumsAdapter(mContext, universityList);
+            recyclerView.setAdapter(adapter);
             super.onPostExecute(result);
-            // CustomJSONadapter adapter1 = new CustomJSONadapter(getApplicationContext(),animals) ;
-           /* ListAdapter adapter = new SimpleAdapter(
-                    MainActivity.this, product,
-                    R.layout.list_item, new String[] { TAG_ID, TAG_PRODUCTS_ID, TAG_CUT_NAME}, new int[] { R.id.name,
-                    R.id.id, R.id.productname});
-            setListAdapter(adapter);*/
         }
 
-    }
-
-    /**
-     * Adding few albums for testing
-     */
-    private void prepareAlbums(String Name, String City, String Website) {
-        int[] covers = new int[]{
-                R.drawable.comsats,
-                R.drawable.lahore,
-                R.drawable.taxila,
-                R.drawable.nust,
-                R.drawable.fast,
-                R.drawable.bahria,
-                R.drawable.giki,
-                R.drawable.pieas,
-                R.drawable.ist,
-                R.drawable.air,
-                R.drawable.university};
-        Album a = new Album(Name, 13, covers[8], Website);
-        albumList.add(a);
-        /*Album a = new Album("COMSATS Institute of Information Technology", 13, covers[0]);
-        albumList.add(a);
-
-        a = new Album("University of Engineering & Technology, Lahore", 8, covers[1]);
-        albumList.add(a);
-
-        a = new Album("University of Engineering & Technology, Taxila", 11, covers[2]);
-        albumList.add(a);
-
-        a = new Album("National University of Science and Technology", 12, covers[3]);
-        albumList.add(a);
-
-        a = new Album("National University of Compputer and Emerging Sciences", 14, covers[4]);
-        albumList.add(a);
-
-        a = new Album("Bahria University", 1, covers[5]);
-        albumList.add(a);
-
-        a = new Album("Ghulam Ishaq Khan Institute of Technology", 11, covers[6]);
-        albumList.add(a);
-
-        a = new Album("Pakistan Institute of Emerging & Applied Sciences", 14, covers[7]);
-        albumList.add(a);
-
-        a = new Album("Institute of Space Technology", 11, covers[8]);
-        albumList.add(a);
-
-        a = new Album("Air University", 17, covers[9]);
-        albumList.add(a);*/
-
-        adapter.notifyDataSetChanged();
     }
 
     /**

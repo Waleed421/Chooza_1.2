@@ -8,5 +8,6 @@
     <string name="university_prompt">Select City</string>
     <string name="program_prompt">Select Program</string>
     <string name="hello_world">Hello world!</string>
+    <string name="ip">172.20.14.76</string>
 
 </resources>

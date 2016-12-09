@@ -50,7 +50,7 @@ public class UniversityFragment extends Fragment {
             try {
                 // Creating service handler class instance
                 ServiceHandler sh = new ServiceHandler();
-                String url="http://192.168.100.138/chooza1/API/GetAllUniversities";
+                String url="http://192.168.43.73/chooza1/API/GetAllUniversities";
                 String jsonStr = (sh.makeServiceCall(url, ServiceHandler.GET));
                 JSONArray jr = new JSONArray(jsonStr);
                 for (int i = 0; i<jr.length(); i++)
@@ -104,7 +104,7 @@ public class UniversityFragment extends Fragment {
             super.onPostExecute(aVoid);
             adapterUniList = new ArrayAdapter<String>((Activity)getActivity(),
                     R.layout.spinner_layout, result);
-            adapterUniList.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
+            adapterUniList.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
             spUniversities.setAdapter(adapterUniList);
 
             //Checking the selected item

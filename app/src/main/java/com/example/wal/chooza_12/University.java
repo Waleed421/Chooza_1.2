@@ -25,6 +25,14 @@ public class University {
         Duration = duration;
     }
 
+    public University(String name, String city, String website, String sector, int thumbnail) {
+        Name = name;
+        City = city;
+        Website = website;
+        Sector = sector;
+        Thumbnail=thumbnail;
+    }
+
 
     public String getName() {
         return Name;

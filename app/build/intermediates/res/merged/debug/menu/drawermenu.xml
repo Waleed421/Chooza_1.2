@@ -28,7 +28,7 @@
                 android:title="Bin"
                 android:icon="@drawable/bin"/>
         </menu>
-    </item>-->
+    </item>
 
     <group android:id="@+id/group_settings_id">
 
@@ -36,7 +36,7 @@
             android:icon="@drawable/settings"/>
         <item android:title="Help"
             android:icon="@drawable/help"/>
-    </group>
+    </group>-->
 
     <group android:id="@+id/group_logout">
 

@@ -2,18 +2,12 @@ package com.example.wal.chooza_12;
 
 
 import android.content.Context;
-import android.content.Intent;
-import android.net.Uri;
-import android.support.v7.widget.PopupMenu;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
-import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 
@@ -23,27 +17,28 @@ import java.util.List;
 public class AlbumsAdapter extends RecyclerView.Adapter<AlbumsAdapter.MyViewHolder> {
 
     private Context mContext;
-    private List<Album> albumList;
-    private final String YOUR_URL = "https://www.comsats.edu.pk/";
+    private List<University> universityList;
     public String[] URL= new String[196];
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
-        public TextView title, count;
-        public ImageView thumbnail, overflow;
+        public TextView name, city, sector, website;
+        public ImageView thumbnail;
 
         public MyViewHolder(View view) {
             super(view);
-            title = (TextView) view.findViewById(R.id.title);
-            count = (TextView) view.findViewById(R.id.count);
+            name = (TextView) view.findViewById(R.id.name);
+            city = (TextView) view.findViewById(R.id.city);
             thumbnail = (ImageView) view.findViewById(R.id.thumbnail);
-            overflow = (ImageView) view.findViewById(R.id.overflow);
+            website = (TextView) view.findViewById(R.id.website);
+            sector = (TextView) view.findViewById(R.id.sector);
+
         }
     }
 
 
-    public AlbumsAdapter(Context mContext, List<Album> albumList) {
+    public AlbumsAdapter(Context mContext, List<University> universityList) {
         this.mContext = mContext;
-        this.albumList = albumList;
+        this.universityList = universityList;
     }
 
     @Override
@@ -56,75 +51,20 @@ public class AlbumsAdapter extends RecyclerView.Adapter<AlbumsAdapter.MyViewHold
 
     @Override
     public void onBindViewHolder(final MyViewHolder holder, final int position) {
-        Album album = albumList.get(position);
-        holder.title.setText(album.getName());
-        holder.count.setText(album.getNumOfSongs() + " programs");
-        URL[position]=album.getWebsite();
+        University university = universityList.get(position);
+        holder.name.setText(university.getName());
+        holder.city.setText(university.getCity());
+        holder.sector.setText(university.getSector());
+        holder.website.setText(university.getWebsite());
 
-        holder.title.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v) {
-                //Intent intent= new Intent(Intent.ACTION_VIEW, Uri.parse(URL[position]));
-                Intent intent= new Intent(Intent.ACTION_VIEW, Uri.parse(URL[position]));
-                mContext.startActivity(intent);
-                /*Intent i = new Intent(Intent.ACTION_VIEW);
-                i.setData(Uri.parse(URL[position]));
-                mContext.startActivity(i);*/
-            }
-
-        });
 
         // loading album cover using Glide library
-        Glide.with(mContext).load(album.getThumbnail()).into(holder.thumbnail);
+        Glide.with(mContext).load(university.getThumbnail()).into(holder.thumbnail);
 
-        holder.overflow.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                showPopupMenu(holder.overflow);
-            }
-        });
-    }
-
-    /**
-     * Showing popup menu when tapping on 3 dots
-     */
-    private void showPopupMenu(View view) {
-        // inflate menu
-        PopupMenu popup = new PopupMenu(mContext, view);
-        MenuInflater inflater = popup.getMenuInflater();
-        inflater.inflate(R.menu.menu_album, popup.getMenu());
-        popup.setOnMenuItemClickListener(new MyMenuItemClickListener());
-        popup.show();
-    }
-
-    /**
-     * Click listener for popup menu items
-     */
-    class MyMenuItemClickListener implements PopupMenu.OnMenuItemClickListener {
-
-        public MyMenuItemClickListener() {
-        }
-
-        @Override
-        public boolean onMenuItemClick(MenuItem menuItem) {
-            switch (menuItem.getItemId()) {
-                case R.id.action_add_favourite:
-                    Toast.makeText(mContext, "Programs Offered", Toast.LENGTH_SHORT).show();
-                    return true;
-                case R.id.action_play_next:
-                    //Toast.makeText(mContext, "Website Link", Toast.LENGTH_SHORT).show();
-                    //Album album = albumList.get(position);
-                    Intent intent= new Intent(Intent.ACTION_VIEW, Uri.parse(YOUR_URL));
-                    mContext.startActivity(intent);
-                    return true;
-                default:
-            }
-            return false;
-        }
     }
 
     @Override
     public int getItemCount() {
-        return albumList.size();
+        return universityList.size();
     }
 }

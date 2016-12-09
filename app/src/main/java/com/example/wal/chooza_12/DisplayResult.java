@@ -7,6 +7,8 @@ import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ListView;
 
 import org.json.JSONArray;
@@ -56,6 +58,14 @@ public class DisplayResult extends AppCompatActivity{
         ConventionalCount= i.getExtras().getString("CCount");
         listview = (ListView) findViewById(R.id.listView);
         new GetResults().execute();
+        Button button = (Button) findViewById(R.id.buttonOk);
+        button.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(DisplayResult.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
 
     }
     private class GetResults extends AsyncTask<Void, Void, Void> {
@@ -65,7 +75,7 @@ public class DisplayResult extends AppCompatActivity{
             results= new ArrayList<>();
             try {
                 ServiceHandler sh = new ServiceHandler();
-                String url = "http://192.168.100.138/chooza1/API/GetAllResultPrograms?";
+                String url = "http://192.168.43.73/chooza1/API/GetAllResultPrograms?";
                 String testResultUrl= url+"R="+RealisticCount+"&I="+InvestigativeCount+"&A="+ArtisticCount+"&S="+SocialCount+"&E="+EnterprisingCount+"&C="+ConventionalCount;
                 String jsonStr = sh.makeServiceCall(testResultUrl, ServiceHandler.GET);
                 JSONArray jr = new JSONArray(jsonStr);
@@ -98,4 +108,6 @@ public class DisplayResult extends AppCompatActivity{
             super.onPostExecute(aVoid);
         }
     }
+
+
 }

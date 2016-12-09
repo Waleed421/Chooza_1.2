@@ -52,8 +52,36 @@ public class signup extends AppCompatActivity {
         radioGroupGender = (RadioGroup) findViewById(R.id.radioGrpGender);
         radioM = (RadioButton) findViewById(R.id.radioM);
         radioF = (RadioButton) findViewById(R.id.radioF);
+        name = txtname.getText().toString();
+        txtname.setValidator(new AutoCompleteTextView.Validator() {
+            @Override
+            public boolean isValid(CharSequence text) {
+                if (name.trim().equals("")) {
+                    txtname.setError("Please enter your name");
+                    vib.vibrate(120);
+                    return true;
+                }
+                return false;
+            }
 
+            @Override
+            public CharSequence fixText(CharSequence invalidText) {
+                return null;
+            }
+        });
+        /*{
 
+                                             @Override
+                                             public void onFocusChange(View v, boolean hasFocus) {
+                                                 if (name.trim().equals("")) {
+                                                     txtname.setError("Please enter your name");
+                                                     vib.vibrate(120);
+                                                     txtname.setFocusable(true);
+                                                 }
+                                             }
+                                         }
+
+        );*/
         btnSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -69,18 +97,34 @@ public class signup extends AppCompatActivity {
                     txtname.setError("Please enter your name");
                     vib.vibrate(120);
                 }
+                else if (username.trim().equals("")) {
+                    txtusername.setError("Please enter username");
+                    vib.vibrate(120);
+                }
+                else if (password.trim().equals("")) {
+                    txtpassword.setError("Please enter password");
+                    vib.vibrate(120);
+                }
+                else if (city.trim().equals("")) {
+                    txtcity.setError("Please enter your city");
+                    vib.vibrate(120);
+                }
+                else if (mobileno.trim().equals("")) {
+                    txtmobileno.setError("Please enter your mobile number");
+                    vib.vibrate(120);
+                }
                 else if (email.trim().equals("")){
                     txtemail.setError("Please enter email Address");
                 vib.vibrate(120);
-            }
+                }
                 else if (!email.contains("@") || !email.contains(".")){
                     txtemail.setError("Please enter a valid email Address");
                     vib.vibrate(120);
                 }
                 else if (mobileno.trim().length() < 10){
-                    txtmobileno.setError("Not a valid mobile no"); // I'm finding solution to validate mobile no
+                    txtmobileno.setError("Not a valid mobile no");
                     vib.vibrate(120);
-                }                // find which radioButton is checked by id
+                }
 
 
                 else {
@@ -116,10 +160,17 @@ public class signup extends AppCompatActivity {
                 txtemail.setText("");
                 txtmobileno.setText("");
                 txtname.setText("");
+                txtdob.setText("");
+                txtusername.setText("");
+                txtpassword.setText("");
+                txtcity.setText("");
                 txtname.setError(null);
                 txtemail.setError(null);
                 txtmobileno.setError(null);
-
+                txtdob.setError(null);
+                txtcity.setError(null);
+                txtpassword.setError(null);
+                txtusername.setError(null);
             }
         });
 
@@ -130,7 +181,7 @@ public class signup extends AppCompatActivity {
         protected Void doInBackground(Void... params) {
             // Creating service handler class instance
             ServiceHandler sh = new ServiceHandler();
-            String url="http://192.168.100.138/chooza1/API/StudentSignup?";
+            String url="http://192.168.43.73/chooza1/API/StudentSignup?";
             String urldata= url+"name="+name+"&username="+username+"&password="+password+"&gender="+gender+"&city="+city+"&phone="+mobileno+"&dob="+dob+"&email="+email;
             String jsonStr = (sh.makeServiceCall(urldata, ServiceHandler.GET));
             databaseHandler.addStudent(new Student(name, username, password));

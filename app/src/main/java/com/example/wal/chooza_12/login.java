@@ -62,7 +62,7 @@ public class login extends AppCompatActivity {
             try {
             // Creating service handler class instance
             ServiceHandler sh = new ServiceHandler();
-            String url="http://192.168.100.138/chooza1/API/StudentLogin?";
+            String url="http://192.168.43.73/chooza1/API/StudentLogin?";
             String urldata= url+"username="+username+"&password="+password;
             String jsonStr = (sh.makeServiceCall(urldata, ServiceHandler.GET));
                 if(jsonStr!="") {

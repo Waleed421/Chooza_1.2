@@ -52,8 +52,9 @@
                 android:text="OK"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/buttonTest"
-                android:gravity="center|bottom"/>
+                android:id="@+id/buttonOk"
+                android:gravity="center|bottom"
+                android:onClick="goToMain"/>
 
         </LinearLayout>
         <android.support.design.widget.NavigationView

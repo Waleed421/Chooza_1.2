@@ -5,10 +5,13 @@ import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.SparseBooleanArray;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
@@ -52,6 +55,8 @@ public class TakeTest extends AppCompatActivity{
     SparseBooleanArray sparseBooleanArray ;
     DrawerLayout mDrawerLayout;
     NavigationView mNavigationView;
+    FragmentManager mFragmentManager;
+    FragmentTransaction mFragmentTransaction;
     public String test="4";
     public int RealisticCount;
     public int InvestigativeCount;
@@ -72,6 +77,50 @@ public class TakeTest extends AppCompatActivity{
          */
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawerLayout);
         mNavigationView = (NavigationView) findViewById(R.id.shitstuff) ;
+        mFragmentManager = getSupportFragmentManager();
+
+        /**
+         * Setup click events on the Navigation View Items.
+         */
+
+        mNavigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(MenuItem menuItem) {
+                mDrawerLayout.closeDrawers();
+
+
+
+                if (menuItem.getItemId() == R.id.test) {
+                    Intent intent = new Intent(TakeTest.this, MainActivity.class);
+                    startActivity(intent);
+                    //FragmentTransaction fragmentTransaction = mFragmentManager.beginTransaction();
+                    //fragmentTransaction.replace(R.id.containerView,new TestFragment()).commit();
+
+                }
+
+                if (menuItem.getItemId() == R.id.university) {
+                    Intent intent = new Intent(TakeTest.this, MainActivity.class);
+                    startActivity(intent);
+                    //FragmentTransaction xfragmentTransaction = mFragmentManager.beginTransaction();
+                    //fragmentTransaction.replace(R.id.containerView,new UniversityFragment()).commit();
+                }
+                if (menuItem.getItemId() == R.id.programs) {
+                    Intent intent = new Intent(TakeTest.this, MainActivity.class);
+                    startActivity(intent);
+                }
+                if (menuItem.getItemId() == R.id.logout) {
+                    this.Logout();
+                }
+                return false;
+            }
+
+            private void Logout() {
+                databaseHandler.deleteAllStudents();
+                Intent intent = new Intent(TakeTest.this, login.class);
+                startActivity(intent);
+            }
+
+        });
         android.support.v7.widget.Toolbar toolbar = (android.support.v7.widget.Toolbar) findViewById(R.id.toolbar);
         ActionBarDrawerToggle mDrawerToggle = new ActionBarDrawerToggle(TakeTest.this,mDrawerLayout, toolbar,R.string.app_name,
                 R.string.app_name);
@@ -102,7 +151,7 @@ public class TakeTest extends AppCompatActivity{
             try {
 
                 ServiceHandler sh = new ServiceHandler();
-                String url="http://192.168.100.138/chooza1/API/GetAllQuestions";
+                String url="http://192.168.43.73/chooza1/API/GetAllQuestions";
                 String jsonStr = sh.makeServiceCall(url, ServiceHandler.GET);
                 System.out.println(jsonStr);
                 databaseHandler.deleteAllQuestions();

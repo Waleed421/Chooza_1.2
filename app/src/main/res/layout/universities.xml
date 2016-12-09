@@ -6,8 +6,8 @@
 
     <FrameLayout
         android:layout_width="350dp"
-        android:layout_height="175dp"
-        android:layout_marginBottom="36dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="150dp"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
         android:background="#95000000"
@@ -26,18 +26,49 @@
             android:layout_centerVertical="true"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="20dp"
-            android:layout_marginLeft="40dp"/>
+            android:layout_marginLeft="30dp"/>
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/ivory"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+        <LinearLayout
+            android:id="@+id/lv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:id="@+id/textViewcity"
+            android:textColor="@color/black"
+            android:layout_weight="0.7"
+            android:gravity="left"
+            android:layout_marginLeft="5dp"
+            android:text="Select City:"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+           android:layout_gravity="center|left"/>
         <Spinner
             android:layout_width="155dp"
             android:layout_height="wrap_content"
             android:id="@+id/spUniversities"
             android:spinnerMode="dialog"
-            android:textColor="@android:color/white"
+            android:textColor="@color/black"
+            android:layout_weight="1.3"
             android:prompt="@string/university_prompt"
-            android:layout_gravity="center"
-            style="@android:style/Widget.Holo.Light.Spinner">
 
+            style="@android:style/Widget.Holo.Light.Spinner">
         </Spinner>
+        </LinearLayout>
+
+        </FrameLayout>
 
         <Button
             android:layout_width="wrap_content"
