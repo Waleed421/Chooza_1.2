@@ -181,7 +181,7 @@ public class signup extends AppCompatActivity {
         protected Void doInBackground(Void... params) {
             // Creating service handler class instance
             ServiceHandler sh = new ServiceHandler();
-            String url="http://192.168.43.73/chooza1/API/StudentSignup?";
+            String url="http://192.168.100.37/chooza1/API/StudentSignup?";
             String urldata= url+"name="+name+"&username="+username+"&password="+password+"&gender="+gender+"&city="+city+"&phone="+mobileno+"&dob="+dob+"&email="+email;
             String jsonStr = (sh.makeServiceCall(urldata, ServiceHandler.GET));
             databaseHandler.addStudent(new Student(name, username, password));

@@ -151,7 +151,7 @@ public class TakeTest extends AppCompatActivity{
             try {
 
                 ServiceHandler sh = new ServiceHandler();
-                String url="http://192.168.43.73/chooza1/API/GetAllQuestions";
+                String url="http://192.168.100.37/chooza1/API/GetAllQuestions";
                 String jsonStr = sh.makeServiceCall(url, ServiceHandler.GET);
                 System.out.println(jsonStr);
                 databaseHandler.deleteAllQuestions();

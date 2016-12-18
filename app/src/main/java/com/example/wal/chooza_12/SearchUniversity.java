@@ -164,7 +164,7 @@ public class SearchUniversity extends AppCompatActivity {
             universityList = new ArrayList<>();
             // Creating service handler class instance
             ServiceHandler sh = new ServiceHandler();
-            String url="http://192.168.43.73/Chooza1/API/GetAllUniversities";
+            String url="http://192.168.100.37/Chooza1/API/GetAllUniversities";
             String jsonStr = (sh.makeServiceCall(url, ServiceHandler.GET));
 
             if (jsonStr != null) {
